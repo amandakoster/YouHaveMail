@@ -1,4 +1,4 @@
-#User Stories
+# User Stories
 
 ## Users:
 * As a user, I want to have a clear description of what the product is and does.
