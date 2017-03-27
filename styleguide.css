@@ -1,3 +1,4 @@
+
 /*GLOBAL CSS*/
 header {
 
@@ -36,6 +37,7 @@ div.markerInputBox{
   margin-right:545px;
   float: right;
 }
+
 h1 {
     display: block;
     font-size: 2em;
@@ -56,6 +58,10 @@ h3 {
     font-size: 1.17em;
     font-weight: bold;
     color:  #333366;
+}
+
+fieldset {
+	border: none;
 }
 
 body {

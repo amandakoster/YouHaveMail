@@ -9,10 +9,10 @@
 	<link href="img/favicon-envelope.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Cutive|Inconsolata:700|Merriweather:900|Tienne:700" rel="stylesheet">
 	<script src="https://use.fontawesome.com/20877e6602.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 
 	<h1>You Have Mail: Registration</h1>
-
 	<h2> Welcome! Please enter your information in the form below. </h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
 	<form id="the-form" method="get" name="the-form">
@@ -23,8 +23,9 @@
 				<li><label for="mailAddress">Mailing address: </label> <input id="mailaddress" name="mailAddress" type="text"></li>
 				<li><label for="emailAddress">Email address: </label> <input id="emailaddress" name="emailAddress" type="text"></li>
 				<li><label for="smsNumber"></label>SMS: <input id="submit" name="aveCookies" type="number"></li>
-				<li><button name="button" type="submit">Submit</button>
-				<li><button name="button" type="submit">Submit</button>
+				<li id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</li>
+				<li><button name="button" type="submit">Email</button>
+				<li><button name="button" type="submit">SMS</button>
 				</li>
 			</ul>
 		</fieldset>
@@ -32,12 +33,16 @@
 	<script src="app.js">
 	</script>
 	<footer>
-		<div>
-			<p class="team"></p>
+		<h3>About Our Team</h3>
+		<div class="li-badges">
+
 		</div>
-		<div><img src=""></div>
-		<div><img src=""></div>
-		<div><img src=""></div>
+		<div class="lli-badges">
+			<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amandakoster"><a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a></div>
+		</div>
+		<div class="li-badges">
+			<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="michael-miller-b1a5967a"><a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a></div>
+		</div>
 	</footer>
 </body>
 </html>
