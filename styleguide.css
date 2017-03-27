@@ -3,6 +3,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     color:  #333366;
+    font-family: 'Merriweather', serif;
 }
 
 h2 {
@@ -22,17 +23,21 @@ h3 {
 body {
   font-family: 'Roboto', sans-serif;
   margin:40%
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   line-height: 1;
 }
 
-
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
     display: block;
     line-height: 1;
+}
+
+li, span {
+  font-size: 14px;
+  display: block;
+  line-height: 1.5;
 }
 
 .compliant {
@@ -51,6 +56,12 @@ div.title_header {
     height: 63px;
     overflow: visible;
     z-index: 9999;
+}
+
+dt {
+  font-size: 14px;
+  display: block;
+  line-height: 1.5;
 }
 
   dl {
@@ -72,4 +83,11 @@ div.title_header {
     height:50px;
     width:150px;
     border: 1px;
+  }
+
+  hr {
+    width: 75%;
+    color: #E71921;
+    border: 1px;
+    border: thin dashed;
   }
