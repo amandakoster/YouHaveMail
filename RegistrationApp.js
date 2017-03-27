@@ -16,9 +16,18 @@
 
 // Create form
 // var event = newUser;
-document.getElementById('submit').addEventListener('click', function(){
-  alert('Thanks for registering!');
-});
+// document.getElementById('submit').addEventListener('click',   function userSubmit(){
+//   alert('Thanks for registering!');
+// }
+document.getElementById('userSubmitButton').addEventListener('click', userSubmit);
+function userSubmit() {
+  var userInput = document.getElementById('userInput').value;
+  localStorage.setItem('submittedUserInput', userInput);
+  alert('Thansk for registering');
+  // document.getElementById('userInput').value = '';
+}
+userSubmit();
+
 //
 // event.preventDefault();
 // var resName = event.target.elements.resName;
