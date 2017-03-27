@@ -20,6 +20,10 @@ h3 {
     color:  #333366;
 }
 
+fieldset {
+	border: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin:40%
