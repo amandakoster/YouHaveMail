@@ -14,9 +14,7 @@
 	</header>
 
 	<main>
-		<div class="map">
-			<img src="https://www.placehold.it/400">
-		</div>
+		<div id="map" class="map"></div>
 		<div class="markerInputBox">
 			<input type="number" id="markerInput" />
 			<button type="submit" id="markerSubmitButton"> Submit M #</button>
@@ -27,6 +25,9 @@
 		<button type="submit" class="logOutButton"><a href="index.html"> Log Out</a></button>
 	</footer>
 	<script src="map.js"></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpdjCoAwxsVsTy60ZIT6g2B9SMvIFkZ8&callback=initMap">
+    </script>
 </body>
 </html>
 
