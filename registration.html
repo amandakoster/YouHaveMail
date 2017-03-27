@@ -15,17 +15,24 @@
 	<h1>You Have Mail: Registration</h1>
 	<h2> Welcome! Please enter your information in the form below. </h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
-	<form id="the-form" method="get" name="the-form">
+	<form id="resForm" method="get" name="res-form">
 		<fieldset>
-			<ul>
+			<ul id="resInput">
 				<li><label for="resName">Name: </label> <input id="resname" maxlength="30" name="resName" type="text"></li>
 				<li><label for="resUserName">User name: </label> <input id="resusername" maxlength="30" name="resUserName" type="text"></li>
 				<li><label for="mailAddress">Mailing address: </label> <input id="mailaddress" name="mailAddress" type="text"></li>
 				<li><label for="emailAddress">Email address: </label> <input id="emailaddress" name="emailAddress" type="text"></li>
-				<li><label for="smsNumber"></label>SMS: <input id="submit" name="aveCookies" type="number"></li>
-				<li id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</li>
-				<li><button name="button" type="submit">Email</button>
-				<li><button name="button" type="submit">SMS</button>
+				<li><label for="smsNumber"></label>SMS: </label><input id="smsnumber" maxlength="10" name="smsNumber" type="number"></li>
+				<li><button name="button" type="submit">Submit</button>
+								<p>
+									Great! Now, choose how would like to be alerted once your mail is deleivered:
+
+				  <input type="checkbox" id="selectSms" value="sms_checkbox">
+				  <label for="cbox1">SMS</label>
+				  <input type="checkbox" id="selectEmail" value="email_checkbox" checked="checked">
+				  <label for="cbox2">Email</label>
+				</p>
+
 				</li>
 			</ul>
 		</fieldset>

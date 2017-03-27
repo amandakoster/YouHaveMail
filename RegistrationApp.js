@@ -1,20 +1,17 @@
-var form = document.getElementById('the-form');
+var form = document.getElementById('res-form');
 
-function createNewStore(event) {
+function createNewUser(event) {
   event.preventDefault();
-  var name = event.target.elements.storeName;
-  var minCust = event.target.elements.minCust;
-  var maxCust = event.target.elements.maxCust;
-  var avgCookieSale = event.target.elements.aveCookies;
-  if (maxCust < minCust) {
-    alert('The max number of customers should not be larger than the min number of customers');
-  } else {
-    var newStore = new Store(name.value, Math.floor(minCust.value), Math.floor(maxCust.value), avgCookieSale.value);
-    newTableRow(newStore);
-    var tFoot = document.getElementById('bob');
-    var totalsRow = document.getElementById('shirley');
-    tFoot.removeChild(totalsRow);
-    hourlyTotals();
-    form.reset();
+  var resName = event.target.elements.resName;
+  var resUserName = event.target.elements.resUserName;
+  var mailAddress = event.target.elements.mailAddress;
+  var emailAddress = event.target.elements.emailAddress;
+  var smsNumber = event.target.elements.smsNumber;
+  var tFoot = document.getElementById('bob');
+  var totalsRow = document.getElementById('shirley');
+  tFoot.removeChild(totalsRow);
+  hourlyTotals();
+  form.reset();
   }
-}
+
+var localstorage =
