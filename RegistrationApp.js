@@ -1,8 +1,16 @@
 
-var userArray = [];
-
 // Create object constructor for new users
-function newUser(resName,resUserName, mailAddress,emailAddress,smsNumber) {
+function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
+  this.resName = resName;
+  this.userName = userName;
+  this.mailAddress = mailAddress;
+  this.emailAddress = emailAddress;
+  this.smsNumber = smsNumber;
+  this.userArray = [];
+  userArray.push(this);
+}
+
+// Create form
   event.preventDefault();
   var resName = event.target.elements.resName;
   var resUserName = event.target.elements.resUserName;
@@ -11,26 +19,7 @@ function newUser(resName,resUserName, mailAddress,emailAddress,smsNumber) {
   var smsNumber = event.target.elements.smsNumber;
   form.reset();
 }
-
-// Create form
-
-// Store form input into local storage
-function saveData(){
-  localStorage.saveServer;
-}
-if (localStorage.whatever) {
-  var storageArray = JSON.parse(localStorage.whatever);
-  for (var i = 0; i < storageArray.length; i++) {
-    productArray[i].itemClick += storageArray[i].itemClick;
-    productArray[i].imageShown += storageArray[i].imageShown ;
-  }
-}
-
 var form = document.getElementById('res-form');
-
-var localstorage = document.getElementById().valye;
-
-// mailMan script accesing new user array, promptin an alert to user
 
 // For getting the text back:
 document.getElementById('saveServer').value = localStorage.getItem('server');
@@ -43,14 +32,20 @@ localStorage.setItem('server', input.value);
 // You can retrieve the value by calling getItem:
 var storedValue = localStorage.getItem('server');
 
-var img1 = document.getElementById ('left');
-var img2 = document.getElementById ('center');
-var img3 = document.getElementById ('right');
-var pictureList = [];
-function Products(itemName, itemPath) {
-  this.itemName = itemName;
-  this.itemPath = itemPath;
-  this.itemClick = 0;
-  this.imageShown = 0;
-  productArray.push(this);
-};
+
+
+// Store form input into local storage
+function saveData(){
+  localStorage.saveServer;
+}
+if (localStorage.whatever) {
+  var storageArray = JSON.parse(localStorage.whatever);
+  for (var i = 0; i < storageArray.length; i++) {
+    productArray[i].itemClick += storageArray[i].itemClick;
+    productArray[i].imageShown += storageArray[i].imageShown ;
+  }
+  var localstorage = document.getElementById().valye;
+}
+
+
+// mailMan script accesing new user array, promptin an alert to user
