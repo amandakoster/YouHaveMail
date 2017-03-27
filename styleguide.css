@@ -6,25 +6,16 @@
 
   dd {
     border-style: solid;
+    border: 1px;
     margin:10px 40px 10px;
     text-align: center;
     line-height: 1.5;
     display:table-cell;
-    vertical-align:middle;
     height:5em;
   }
 
   dd.palette {
-    height:100px;
-    width:270px;
-  }
-
-  dd.compliant {
-    height:60px;
-    width:270px;
-  }
-
-  dd.noncompliant {
-    height:180px;
-    width:270px;
+    height:50px;
+    width:150px;
+    border: 1px;
   }
