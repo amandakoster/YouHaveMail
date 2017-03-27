@@ -1,20 +1,51 @@
-var form = document.getElementById('the-form');
 
-function createNewStore(event) {
-  event.preventDefault();
-  var name = event.target.elements.storeName;
-  var minCust = event.target.elements.minCust;
-  var maxCust = event.target.elements.maxCust;
-  var avgCookieSale = event.target.elements.aveCookies;
-  if (maxCust < minCust) {
-    alert('The max number of customers should not be larger than the min number of customers');
-  } else {
-    var newStore = new Store(name.value, Math.floor(minCust.value), Math.floor(maxCust.value), avgCookieSale.value);
-    newTableRow(newStore);
-    var tFoot = document.getElementById('bob');
-    var totalsRow = document.getElementById('shirley');
-    tFoot.removeChild(totalsRow);
-    hourlyTotals();
-    form.reset();
-  }
+// Create object constructor for new users
+function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
+  this.resName = resName;
+  this.userName = userName;
+  this.mailAddress = mailAddress;
+  this.emailAddress = emailAddress;
+  this.smsNumber = smsNumber;
+  this.userArray = [];
+  userArray.push(this);
 }
+
+// Create form
+  event.preventDefault();
+  var resName = event.target.elements.resName;
+  var resUserName = event.target.elements.resUserName;
+  var mailAddress = event.target.elements.mailAddress;
+  var emailAddress = event.target.elements.emailAddress;
+  var smsNumber = event.target.elements.smsNumber;
+  form.reset();
+}
+var form = document.getElementById('res-form');
+
+// For getting the text back:
+document.getElementById('saveServer').value = localStorage.getItem('server');
+
+// The localStorage object has a setItem method which is used to store an item. It takes 2 arguments - a key by which you can refer to the item, and a value:
+var input = document.getElementById('saveServer');
+localStorage.setItem('server', input.value);
+// The above code first gets a reference to the input element, and then stores an item ("server") in local storage with the value of the value of that input element.
+
+// You can retrieve the value by calling getItem:
+var storedValue = localStorage.getItem('server');
+
+
+
+// Store form input into local storage
+function saveData(){
+  localStorage.saveServer;
+}
+if (localStorage.whatever) {
+  var storageArray = JSON.parse(localStorage.whatever);
+  for (var i = 0; i < storageArray.length; i++) {
+    productArray[i].itemClick += storageArray[i].itemClick;
+    productArray[i].imageShown += storageArray[i].imageShown ;
+  }
+  var localstorage = document.getElementById().valye;
+}
+
+
+// mailMan script accesing new user array, promptin an alert to user

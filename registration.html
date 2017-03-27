@@ -8,40 +8,48 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="img/favicon-envelope.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Cutive|Inconsolata:700|Merriweather:900|Tienne:700" rel="stylesheet">
-	<script src="https://use.fontawesome.com/20877e6602.js"></script>
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script src="https://use.fontawesome.com/20877e6602.js">
+	</script>
+	<script async defer src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript">
+	</script>
 </head>
-
+<body>
 	<h1>You Have Mail: Registration</h1>
-	<h2> Welcome! Please enter your information in the form below. </h2>
+	<h2>Welcome! Please enter your information in the form below.</h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
-	<form id="the-form" method="get" name="the-form">
-		<fieldset>
-			<ul>
-				<li><label for="resName">Name: </label> <input id="resname" maxlength="30" name="resName" type="text"></li>
-				<li><label for="resUserName">User name: </label> <input id="resusername" maxlength="30" name="resUserName" type="text"></li>
-				<li><label for="mailAddress">Mailing address: </label> <input id="mailaddress" name="mailAddress" type="text"></li>
-				<li><label for="emailAddress">Email address: </label> <input id="emailaddress" name="emailAddress" type="text"></li>
-				<li><label for="smsNumber"></label>SMS: <input id="submit" name="aveCookies" type="number"></li>
-				<li id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</li>
-				<li><button name="button" type="submit">Email</button>
-				<li><button name="button" type="submit">SMS</button>
-				</li>
-			</ul>
-		</fieldset>
-	</form>
+	<div id="form">
+		<form id="resForm" method="get" name="res-form">
+			<fieldset>
+				<ul id="resInput">
+					<li><label for="resName">Name:</label> <input id="resname" maxlength="30" name="resName" type="text"></li>
+					<li><label for="resUserName">User name:</label> <input id="resusername" maxlength="30" name="resUserName" type="text"></li>
+					<li><label for="mailAddress">Mailing address:</label> <input id="mailaddress" name="mailAddress" type="text"></li>
+					<li><label for="emailAddress">Email address:</label> <input id="emailaddress" name="emailAddress" type="text"></li>
+					<li><label for="smsNumber"></label>SMS: <input id="smsnumber" maxlength="10" name="smsNumber" type="number"></li>
+					<li><button name="button" type="submit">Submit</button></li>
+				</ul>
+			</fieldset>
+		</form>
+				<p id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</p>
+				<ul id="regCheckbox">
+				<li><input id="selectSms" type="checkbox" value="sms_checkbox"> <label for="cbox1">SMS</label></li>
+				<li><input checked="checked" id="selectEmail" type="checkbox" value="email_checkbox"> <label for="cbox2">Email</label></li>
+
+	</div>
 	<script src="app.js">
 	</script>
 	<footer>
 		<h3>About Our Team</h3>
-		<div class="li-badges">
-
-		</div>
+		<div class="li-badges"></div>
 		<div class="lli-badges">
-			<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amandakoster"><a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a></div>
+			<div class="LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="horizontal" data-vanity="amandakoster" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a>
+			</div>
 		</div>
 		<div class="li-badges">
-			<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="michael-miller-b1a5967a"><a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a></div>
+			<div class="LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="horizontal" data-vanity="michael-miller-b1a5967a" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a>
+			</div>
 		</div>
 	</footer>
 </body>
