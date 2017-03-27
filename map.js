@@ -1,4 +1,5 @@
-document.getElementById("markerSubmitBUtton").addEventListener("click", );
-function markerSubmit {
-    var markerStorage = 
+document.getElementById("markerSubmitButton").addEventListener("click", markerSubmit);
+function markerSubmit() {
+	var markerInput = document.getElementById('markerInput').value;
+	localStorage.setItem('server', markerInput);
 }
