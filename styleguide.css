@@ -1,3 +1,18 @@
+/*GLOBAL CSS*/
+header {
+
+}
+#logo-div {
+  display: block;
+}
+#logo-img {
+  display: inline;
+}
+#logo-text {
+  display: inline;
+}
+
+/*MAP CSS*/
 img.logo {
   height:80px;
   width:80px;
