@@ -91,3 +91,19 @@ dt {
     border: 1px;
     border: thin dashed;
   }
+
+a:link {
+    color: #333366;
+}
+
+a:visited {
+    color: #333366;
+}
+
+a:hover {
+    color: #E71921;
+}
+
+a:active {
+    color: #333366
+}
