@@ -1,3 +1,37 @@
+
+/*GLOBAL CSS*/
+header {
+
+}
+#logo-div {
+  display: block;
+}
+#logo-img {
+  display: inline;
+}
+#logo-text {
+  display: inline;
+}
+
+/*MAP CSS*/
+img.logo {
+  height:80px;
+  width:80px;
+  display:inline;
+}
+div.map{
+  width:400px;
+  height:400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.markerInputBox{
+  text-align: center;
+  margin-right:545px;
+  float: right;
+}
+
 h1 {
     display: block;
     font-size: 2em;
