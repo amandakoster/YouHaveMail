@@ -1,8 +1,5 @@
 
 /*GLOBAL CSS*/
-
-
-/*GLOBAL CSS*/
 body {
   width: 95%;
   margin: auto;
@@ -53,6 +50,22 @@ header {
   right: 5%;
 }
 
+a:link {
+	color: #333366;
+}
+
+a:visited {
+	color: #333366;
+}
+
+a:hover {
+	color: #E71921;
+}
+
+a:active {
+	color: #333366
+}
+
 /*MAP CSS*/
 img.logo {
   height:80px;
@@ -77,7 +90,6 @@ h1 {
     color:  #333366;
     font-family: 'Merriweather', serif;
 }
-
 
 header {}
 
@@ -188,22 +200,6 @@ div.title_header {
 }
 
 
-
-a:link {
-	color: #333366;
-}
-
-a:visited {
-	color: #333366;
-}
-
-a:hover {
-	color: #E71921;
-}
-
-a:active {
-	color: #333366
-}
 
 /*STYLEGUIDE STUFF*/
 
