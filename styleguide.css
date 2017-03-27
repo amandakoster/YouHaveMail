@@ -1,4 +1,83 @@
+
 /*GLOBAL CSS*/
+
+
+/*GLOBAL CSS*/
+body {
+  width: 95%;
+  margin: auto;
+  padding: 0;
+}
+main{
+  width: 100%;
+  margin: inherit;
+}
+
+header {
+  width: 100%;
+}
+#logo-div {
+  display: block;
+}
+#logo-img {
+  display: inline;
+}
+#logo-text {
+  display: inline;
+}
+#footer {
+  height: 26vw;
+  outline: 1px solid red;
+  position: relative;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+}
+.li-badges {
+  outline: 1px solid blue;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left-badge {
+  left: 5%;
+}
+.center-badge {
+  left:37%;
+}
+.right-badge {
+  right: 5%;
+}
+
+/*MAP CSS*/
+img.logo {
+  height:80px;
+  width:80px;
+  display:inline;
+}
+div.map{
+  width:400px;
+  height:400px;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.markerInputBox{
+  text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color:  #333366;
+    font-family: 'Merriweather', serif;
+}
+
 
 header {}
 
