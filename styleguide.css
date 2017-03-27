@@ -1,7 +1,17 @@
 
 /*GLOBAL CSS*/
-header {
+body {
+  width: 95%;
+  margin: auto;
+  padding: 0;
+}
+main{
+  width: 100%;
+  margin: inherit;
+}
 
+header {
+  width: 100%;
 }
 #logo-div {
   display: block;
@@ -11,6 +21,33 @@ header {
 }
 #logo-text {
   display: inline;
+}
+#footer {
+  height: 26vw;
+  outline: 1px solid red;
+  position: relative;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+}
+.li-badges {
+  outline: 1px solid blue;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left-badge {
+  left: 5%;
+}
+.center-badge {
+  left:37%;
+}
+.right-badge {
+  right: 5%;
 }
 
 /*MAP CSS*/
