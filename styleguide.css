@@ -1,113 +1,156 @@
+/*GLOBAL CSS*/
+
+header {}
+
+#logo-div {
+	display: block;
+}
+
+#logo-img {
+	display: inline;
+}
+
+#logo-text {
+	display: inline;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 40% font-size: 14px;
+	line-height: 24px;
+	line-height: 1;
+}
+
+p {
+	font-size: 14px;
+	display: block;
+	line-height: 1;
+}
+
+hr {
+	width: 75%;
+	color: #E71921;
+	border: 1px;
+	border: thin dashed;
+}
+
+/*MAP CSS*/
+
+img.logo {
+	height: 80px;
+	width: 80px;
+	display: inline;
+}
+
+div.map {
+	width: 400px;
+	height: 400px;
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div.markerInputBox {
+	text-align: center;
+	margin-right: 545px;
+	float: right;
+}
+
 h1 {
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-    color:  #333366;
-    font-family: 'Merriweather', serif;
+	display: block;
+	font-size: 2em;
+	font-weight: bold;
+	color: #333366;
+	font-family: 'Merriweather', serif;
 }
 
 h2 {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    color:  #333366;
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #333366;
 }
 
 h3 {
-    display: block;
-    font-size: 1.17em;
-    font-weight: bold;
-    color:  #333366;
+	display: block;
+	font-size: 1.17em;
+	font-weight: bold;
+	color: #333366;
 }
+
+/*REGISTRATION CSS*/
 
 fieldset {
 	border: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  margin:40%
-  font-size: 14px;
-  line-height: 24px;
-  line-height: 1;
-}
-
-p {
-    font-size: 14px;
-    display: block;
-    line-height: 1;
-}
-
 li, span {
-  font-size: 14px;
-  display: block;
-  line-height: 1.5;
+	font-size: 14px;
+	display: block;
+	line-height: 1.5;
 }
 
 .compliant {
-  background-color:#ffffff;
-  color:#595959;
-  border-width:1pt;
-  border-color:#595959;
-  Text Gray #595959
+	background-color: #ffffff;
+	color: #595959;
+	border-width: 1pt;
+	border-color: #595959;
+	Text Gray #595959
 }
 
 div.title_header {
-    position: fixed;
-    padding: 10px 10px 10px 40px;
-    background-color: #333366;
-    width: 1230px;
-    height: 63px;
-    overflow: visible;
-    z-index: 9999;
+	position: fixed;
+	padding: 10px 10px 10px 40px;
+	background-color: #333366;
+	width: 1230px;
+	height: 63px;
+	overflow: visible;
+	z-index: 9999;
 }
 
-dt {
-  font-size: 14px;
-  display: block;
-  line-height: 1.5;
-}
 
-  dl {
-    text-align: left;
-    padding-left:30px;
-  }
-
-  dd {
-    border-style: solid;
-    border: 1px;
-    margin:10px 40px 10px;
-    text-align: center;
-    line-height: 1.5;
-    display:table-cell;
-    height:5em;
-  }
-
-  dd.palette {
-    height:50px;
-    width:150px;
-    border: 1px;
-  }
-
-  hr {
-    width: 75%;
-    color: #E71921;
-    border: 1px;
-    border: thin dashed;
-  }
 
 a:link {
-    color: #333366;
+	color: #333366;
 }
 
 a:visited {
-    color: #333366;
+	color: #333366;
 }
 
 a:hover {
-    color: #E71921;
+	color: #E71921;
 }
 
 a:active {
-    color: #333366
+	color: #333366
+}
+
+/*STYLEGUIDE STUFF*/
+
+dt {
+	font-size: 14px;
+	display: block;
+	line-height: 1.5;
+}
+
+dl {
+	text-align: left;
+	padding-left: 30px;
+}
+
+dd {
+	border-style: solid;
+	border: 1px;
+	margin: 10px 40px 10px;
+	text-align: center;
+	line-height: 1.5;
+	display: table-cell;
+	height: 5em;
+}
+
+dd.palette {
+	height: 50px;
+	width: 150px;
+	border: 1px;
 }
