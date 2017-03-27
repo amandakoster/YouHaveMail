@@ -72,9 +72,12 @@ a:active {
 }
 
 /*MAP CSS*/
+div.logOut {
+  text-align:center;
+}
 #map {
   height: 400px;
-  width: 100%;
+  width: 400px;
 }
 img.logo {
   height:80px;
@@ -89,15 +92,16 @@ div.map{
   text-align: center;
 }
 div.markerInputBox{
+  margin: 0 auto;
   text-align: center;
 }
 
 h1 {
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-    color:  #333366;
-    font-family: 'Merriweather', serif;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color:  #333366;
+  font-family: 'Merriweather', serif;
 }
 
 header {}
@@ -132,50 +136,6 @@ hr {
 	color: #E71921;
 	border: 1px;
 	border: thin dashed;
-}
-
-/*MAP CSS*/
-
-img.logo {
-	height: 80px;
-	width: 80px;
-	display: inline;
-}
-
-div.map {
-	width: 400px;
-	height: 400px;
-	border-radius: 10px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-div.markerInputBox {
-	text-align: center;
-	margin-right: 545px;
-	float: right;
-}
-
-h1 {
-	display: block;
-	font-size: 2em;
-	font-weight: bold;
-	color: #333366;
-	font-family: 'Merriweather', serif;
-}
-
-h2 {
-	display: block;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #333366;
-}
-
-h3 {
-	display: block;
-	font-size: 1.17em;
-	font-weight: bold;
-	color: #333366;
 }
 
 /*REGISTRATION CSS*/
