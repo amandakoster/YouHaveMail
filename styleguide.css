@@ -22,9 +22,15 @@ header {
 #logo-text {
   display: inline;
 }
-footer {
+#footer {
+  height: 26vw;
   outline: 1px solid red;
   position: relative;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
 }
 .li-badges {
   outline: 1px solid blue;
