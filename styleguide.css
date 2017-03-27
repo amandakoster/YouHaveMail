@@ -13,8 +13,9 @@ main{
 header {
   width: 100%;
 }
-#logo-div {
+.logo-div {
   display: block;
+  background-color: #D8D8D8;
 }
 #logo-img {
   display: inline;
@@ -22,10 +23,14 @@ header {
 #logo-text {
   display: inline;
 }
+#logo-text:hover {
+  color: #E71921;
+}
 #footer {
   height: 26vw;
   outline: 1px solid red;
   position: relative;
+  background-color: #f7f7f7;
 }
 #footer h3 {
   display: block;
