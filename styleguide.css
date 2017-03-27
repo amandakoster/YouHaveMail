@@ -11,6 +11,12 @@ header {
 #logo-text {
   display: inline;
 }
+footer {
+  outline: 1px solid red;
+}
+footer.li-badges {
+  outline: 1px solid blue;
+}
 
 /*MAP CSS*/
 img.logo {
