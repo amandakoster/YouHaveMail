@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<!-- Style Guide from USPS: https://www.usps.com/styleguide/design/ -->
 	<meta charset="utf-8">
-	<title>You Have Mail Style Guide</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>You Have Mail</title>
 	<link href="styleguide.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="img/favicon-envelope.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Bungee|Cutive|Inconsolata:700|Merriweather:900|Tienne:700" rel="stylesheet">
-	<script src="https://use.fontawesome.com/20877e6602.js">
-	</script>
 	<script async defer src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript">
+	</script>
+	<script src="https://use.fontawesome.com/20877e6602.js">
 	</script>
 </head>
 <body>
+	<header>
+		<section>
+			<div class="logo-div">
+				<a href="index.html" id="logo-img"><i aria-hidden="true" class="fa fa-envelope fa-3x"></i>
+				<h2 id="logo-text">You Have Mail!</h2></a>
+			</div>
+		</section>
+	</header>
 	<h1>You Have Mail: Registration</h1>
 	<h2>Welcome! Please enter your information in the form below.</h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
-	<div id="form">
-		<form id="resForm" method="get" name="res-form">
-			<fieldset>
-				<ul id="resInput">
-					<li><label for="resName">Name:</label> <input id="resname" maxlength="30" name="resName" type="text"></li>
-					<li><label for="resUserName">User name:</label> <input id="resusername" maxlength="30" name="resUserName" type="text"></li>
-					<li><label for="mailAddress">Mailing address:</label> <input id="mailaddress" name="mailAddress" type="text"></li>
-					<li><label for="emailAddress">Email address:</label> <input id="emailaddress" name="emailAddress" type="text"></li>
-					<li><label for="smsNumber"></label>SMS: <input id="smsnumber" maxlength="10" name="smsNumber" type="number"></li>
-					<li><button name="button" type="submit">Submit</button></li>
-				</ul>
-				<p id="alertCoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</p><input id="selectSms" type="checkbox" value="sms_checkbox"> <label for="cbox1">SMS</label> <input checked="checked" id="selectEmail" type="checkbox" value="email_checkbox"> <label for="cbox2">Email</label>
-			</fieldset>
-		</form>
-	</div>
-	<script src="app.js">
-	</script>
-	<footer>
+	<form id="form" name="form">
+		<fieldset>
+			<div>Name: <input id="fullName" type="text">
+			</div>
+			<div>User Name: <input id="userName" type="text">
+			</div>
+			<div>
+				Mailing address: <input id="mailAddress" type="text">
+			</div>
+			<div>Email address: <input id="emailAddress" type="text">
+			</div>
+			<div>SMS: <input id="sms" type="number">
+			</div>
+
+			<button id="submitButton" type="submit">Submit</button>
+			<div>
+				Great! Now, choose how would like to be alerted once your mail is delivered:
+			</div>
+			<div>
+				<input id="selectSms" type="checkbox" value="sms">SMS
+			</div>
+			<div>
+				<input id="selectEmail" type="checkbox" value="email">Email
+			</div>
+		</fieldset>
+	</form><!-- <main>
+        <div id="map" class="map"></div>
+        <div class="markerInputBox">
+            <input type="number" id="markerInput" />
+            <button type="submit" id="markerSubmitButton"> Submit M #</button>
+        </div>
+    </main> -->
+	<footer id="footer">
 		<h3>About Our Team</h3>
-		<div class="li-badges"></div>
-		<div class="lli-badges">
-			<div class="LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="horizontal" data-vanity="amandakoster" data-version="v1">
+		<div class="li-badges left-badge">
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="jt-salamon-12237b82" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/jt-salamon-12237b82?trk=profile-badge'>jt salamon</a>
+			</div>
+		</div>
+		<div class="li-badges center-badge">
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="amandakoster" data-version="v1">
 				<a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a>
 			</div>
 		</div>
-		<div class="li-badges">
-			<div class="LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="horizontal" data-vanity="michael-miller-b1a5967a" data-version="v1">
+		<div class="li-badges right-badge">
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="michael-miller-b1a5967a" data-version="v1">
 				<a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a>
 			</div>
 		</div>
 	</footer>
+	<script src="RegistrationApp.js">
+	</script>
 </body>
 </html>
