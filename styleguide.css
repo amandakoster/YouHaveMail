@@ -99,6 +99,11 @@ section {
 }
 
 /*MAP CSS*/
+.messageSent{
+  height:100px;
+  width:100px;
+  float:right;
+}
 .numberGrid{
  float:left;
  margin-left: 5px;
