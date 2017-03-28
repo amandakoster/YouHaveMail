@@ -10,15 +10,14 @@
 </head>
 <body>
 	<header>
-		<section>
-			<div class="logo-div">
-				<a id="logo-img" href="index.html"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
-			</div>
-		</section>
+		<div class="logo-div">
+			<a id="logo-img" href="index.html"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
+		</div>
+		<a id="register-link" href="registration.html">New to YHM? Register here!</a>
 	</header>
 
 	<main>
-		<section>
+		<section id=main-content>
 			<div class="welcome">
 				<h1>Welcome text</h1>
 			</div>
@@ -26,9 +25,12 @@
 				<p class="aboutMe">Stuff about our product.</p>
 			</div>
 			<div class="main-buttons">
-				<button id="res-button" type="button">Button</button>
-				<button id="mm-button" type="button">Button</button>
-				<a href="#">New to YHM? Register here!</a>
+				<div id="res-button-cont">
+					<button id="res-button" type="button">Button</button>
+				</div>
+				<div class="mm-button-cont">
+					<button id="mm-button" type="button">Button</button>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -45,5 +47,6 @@
 			<div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="michael-miller-b1a5967a"><a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a></div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
