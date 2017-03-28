@@ -1,4 +1,5 @@
 'use strict';
+
 var newUserArray = [];
 var persistedUserArray = [];
 document.getElementById('submitButton').addEventListener('click', storeUser);
@@ -19,13 +20,13 @@ function storeUser() {
 };
 
 if (localStorage.userArray) {
-  var persistedUsers = JSON.parse(localStorage.userArray);
+  var persistedUserArray = JSON.parse(localStorage.userArray);
 } else { // if array is not in localStorage already
-  var persistedUsers = [];
+  var persistedUserArray = [];
 }
 
-persistedUsers.push(user);
-localStorage.userArray = JSON.stringify(persistedUsers);
+persistedUserArray.push(user);
+localStorage.userArray = JSON.stringify(persistedUserArray);
 
 //add event handler
 // function processRegistration(event) {
