@@ -30,4 +30,9 @@ resButton.addEventListener('click', function(){
   passwordLabel.setAttribute('for','password');
   form.appendChild(passwordLabel);
   form.appendChild(inputPassword);
+  var submitButton = document.createElement('button');
+  submitButton.setAttribute('id','submitButton');
+  submitButton.setAttribute('type','submit');
+  submitButton.innerText = 'Submit';
+  form.appendChild(submitButton);
 });

@@ -8,7 +8,14 @@ main{
   margin: inherit;
   width: 100%;
 }
+
+#header {
+  width: 100%;
+  position: relative;
+  height: 5.5vw;
+
 header {
+
   background-color: #D8D8D8;
   height: 6vw;
   position: relative;
@@ -19,33 +26,44 @@ header {
   top: 12%;
   right: 1%;
 }
+#logo-inner {
+  font-size: 4.5vw;
+}
 .fa {
   left: 2%;
+
+  top: 50%;
+  transform: translateY(-50%);
+
   position: absolute;
   top: 10%;
+
 }
 .logo-div {
   display: block;
+
+
   height: 100%;
   position: absolute;
   outline: 1px solid red;
   width: 25%;
+
 }
 #logo-img {
 position: absolute;
 display: block;
 width: 100%;
-outline: 1px solid yellow;
 height: 100%;
 }
 #logo-text {
   display: block;
   position: absolute;
   left:23%;
-  top: 33%;
-  outline: 1px solid blue;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 0;
   margin: 0;
+  font-size: 2.5vw;
 }
 #logo-text:hover {
   color: #E71921;
@@ -60,6 +78,7 @@ height: 100%;
   display: block;
   text-align: center;
   font-size: 3vw;
+  color: #333366;
 }
 .li-badges {
   outline: 1px solid blue;
@@ -211,12 +230,28 @@ div.title_header {
   margin: auto;
   width: 60%;
   text-align: center;
+  height: 42vw;
+}
+.welcome {
+
+}
+.about-products{
+
+}
+.about-us {
+
+}
+.main-buttons {
+
 }
 #res-button-cont {
   width: 15%;
 }
 #res-button {
   float: left;
+}
+#mm-button-cont {
+
 }
 #mm-button {
   float: right;
