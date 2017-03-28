@@ -1,3 +1,5 @@
+'use strict';
+var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
 function markerSubmit() {
 
@@ -41,6 +43,7 @@ function initMap() {
  	position: gas76,
  	map:map,
   });
+   placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label).sort;
 google.maps.event.addListener(map, 'click', function(event) {
    placeMarker(event.latLng);
 });
@@ -50,5 +53,9 @@ function placeMarker(location) {
         position: location, 
         map: map
     });
+
 }
-}
+};
+
+
+
