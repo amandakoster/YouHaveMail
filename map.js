@@ -2,6 +2,8 @@
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
 document.getElementById('markerSubmitButton').addEventListener('click', createList);
+document.getElementById('markerSubmitButton').addEventListener('click', messageSent);
+
 // document.getElementById('markerSubmitButton').addEventListener('click', error);
 //
 // function error() {
@@ -11,6 +13,13 @@ document.getElementById('markerSubmitButton').addEventListener('click', createLi
 //     break;
 //   }
 // }
+function messageSent() {
+  var messageSent = document.getElementById('messageSent');
+  var img = document.createElement("img");
+  img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
+  messageSent.appendChild(img);
+
+}
 function markerSubmit() {
   var markerInput = document.getElementById('markerInput').value;
   localStorage.setItem('submittedInput', markerInput);
@@ -23,35 +32,40 @@ function initMap() {
     center: codeFellows
   });
   var marker = new google.maps.Marker({
+    name:'Code Fellows',
   	label: 'C',
     position: codeFellows,
     map: map
   });
   var bank = {lat: 47.6175, lng: -122.3520};
   var markerBank = new google.maps.Marker({
- 	label: 'E',
- 	position: bank,
- 	map:map
-  });
+    name:'Banner Bank',
+   	label: 'E',
+   	position: bank,
+   	map:map
+    });
   var kiro = {lat: 47.6193, lng: -122.3504};
   var markerKiro = new google.maps.Marker({
- 	label: 'A',
- 	position: kiro,
- 	map:map,
-  });
+    name:'Kiro 7',
+   	label: 'A',
+   	position: kiro,
+   	map:map,
+    });
   var pSC = {lat: 47.6178, lng: -122.3514};
   var markerPSC = new google.maps.Marker({
- 	label: 'D',
- 	position: pSC,
- 	map:map,
-  });
+    name:'Pacific Science Center',
+   	label: 'D',
+   	position: pSC,
+   	map:map,
+    });
   var gas76 = {lat: 47.6192, lng: -122.3517};
   var markerGas76 = new google.maps.Marker({
- 	label: 'B',
- 	position: gas76,
- 	map:map,
-  });
-  placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
+    name:'76',
+   	label: 'B',
+   	position: gas76,
+   	map:map,
+    });
+  placedMarkerArray.push(marker.position, markerBank.position, markerKiro.position, markerGas76.position, markerPSC.position);
   google.maps.event.addListener(map, 'click', function(event) {
     placeMarker(event.latLng);
   });
@@ -61,7 +75,7 @@ function initMap() {
       position: location,
       map: map
     });
-
+    placedMarkerArray.push(marker.position);
   }
 }
 function createList() {
