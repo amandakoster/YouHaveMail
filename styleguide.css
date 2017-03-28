@@ -13,9 +13,9 @@ main{
   width: 100%;
   position: relative;
   height: 5.5vw;
+}
 
 header {
-
   background-color: #D8D8D8;
   height: 6vw;
   position: relative;
@@ -133,7 +133,7 @@ section {
 .gridNumber{
   float:left;
   margin-left:55px;
-  margin-top:85px; 
+  margin-top:85px;
 }
 .messageSentText{
   margin-top:100px;

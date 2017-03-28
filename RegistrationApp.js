@@ -20,15 +20,15 @@ function processRegistration(event) {
   event.preventDefault();
   event.target.elements.username.value; // gets value of username field
   document.getElementById('username').value;
+  productArray[i].imageShown += storageArray[i].imageShown ;
 }
-
-if (localStorage.userArray) {
-  userArray = JSON.parse(localStorage.userArray);
-} else {
-  var userArray = [];
-}
-userArray.push(storeUser);
-localStorage.userArray = JSON.stringify(userArray);
+//
+// if (localStorage.userArray) {
+//   userArray = JSON.parse(localStorage.userArray);
+// } else {
+// }
+// userArray.push(storeUser);
+// localStorage.userArray = JSON.stringify(userArray);
 
 //add event listener
 // storeUserLocalStorage();
