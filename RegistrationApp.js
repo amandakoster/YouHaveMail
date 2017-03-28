@@ -1,3 +1,8 @@
+var name = document.getElementById('name').value;
+localStorage.setItem('name', name);
+
+document.getElementById('submitButton').addEventListener('click',function userSubmit(){
+alert('Thanks for registering!');
 //
 // // Create object constructor for new users
 // var userArray = [];
@@ -16,17 +21,8 @@
 
 // Create form
 // var event = newUser;
-// document.getElementById('submit').addEventListener('click',   function userSubmit(){
-//   alert('Thanks for registering!');
+//
 // }
-document.getElementById('userSubmitButton').addEventListener('click', userSubmit);
-function userSubmit() {
-  var userInput = document.getElementById('userInput').value;
-  localStorage.setItem('submittedUserInput', userInput);
-  alert('Thansk for registering');
-  // document.getElementById('userInput').value = '';
-}
-userSubmit();
 
 //
 // event.preventDefault();

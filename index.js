@@ -10,6 +10,10 @@ resButton.addEventListener('click', function(){
   resButtonCont.appendChild(form);
   var inputEmail = document.createElement('input');
   inputEmail.setAttribute('type', 'email');
+
+  form.appendChild(inputEmail);
+  var inputPassword = document.createElement('input');
+  inputPassword.setAttribute('type','password');
   inputEmail.setAttribute('name','email');
   var emailLabel = document.createElement('label');
   emailLabel.setAttribute('id','email-field');
