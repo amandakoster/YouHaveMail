@@ -1,20 +1,18 @@
 'use strict';
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
-// document.getElementById('markerSubmitButton').addEventListener('click', createList);
-document.getElementById('markerSubmitButton').addEventListener('click', error);
-
-function error() {
-	var markerInput = document.getElementById('markerInput').value;
-	while(markerInput !== '12'){
-		alert('Please enter the right grid Id #');
-		break;
-	}
-	
-	
-}
+document.getElementById('markerSubmitButton').addEventListener('click', createList);
+// document.getElementById('markerSubmitButton').addEventListener('click', error);
+//
+// function error() {
+//   var markerInput = document.getElementById('markerInput').value;
+//   while(markerInput !== '12'){
+//     alert('Please enter the right grid Id #');
+//     break;
+//   }
+//
+// }
 function markerSubmit() {
-
   var markerInput = document.getElementById('markerInput').value;
   localStorage.setItem('submittedInput', markerInput);
   document.getElementById('markerInput').value = '';
@@ -30,50 +28,50 @@ function initMap() {
     position: codeFellows,
     map: map
   });
- var bank = {lat: 47.6175, lng: -122.3520}
- var markerBank = new google.maps.Marker({
+  var bank = {lat: 47.6175, lng: -122.3520};
+  var markerBank = new google.maps.Marker({
  	label: 'E',
  	position: bank,
  	map:map
   });
- var kiro = {lat: 47.6193, lng: -122.3504}
- var markerKiro = new google.maps.Marker({
+  var kiro = {lat: 47.6193, lng: -122.3504};
+  var markerKiro = new google.maps.Marker({
  	label: 'A',
  	position: kiro,
  	map:map,
   });
- var pSC = {lat: 47.6178, lng: -122.3514}
- var markerPSC = new google.maps.Marker({
+  var pSC = {lat: 47.6178, lng: -122.3514};
+  var markerPSC = new google.maps.Marker({
  	label: 'D',
  	position: pSC,
  	map:map,
   });
- var gas76 = {lat: 47.6192, lng: -122.3517}
- var markerGas76 = new google.maps.Marker({
+  var gas76 = {lat: 47.6192, lng: -122.3517};
+  var markerGas76 = new google.maps.Marker({
  	label: 'B',
  	position: gas76,
  	map:map,
   });
-placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
-google.maps.event.addListener(map, 'click', function(event) {
-placeMarker(event.latLng);
-});
+  placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
+  google.maps.event.addListener(map, 'click', function(event) {
+    placeMarker(event.latLng);
+  });
 
-function placeMarker(location) {
+  function placeMarker(location) {
     var marker = new google.maps.Marker({
-        position: location, 
-        map: map
+      position: location,
+      map: map
     });
 
-}
+  }
 }
 function createList() {
-	var list = document.getElementById('ul');
-	for (var i = 0; i < placedMarkerArray.length; i++){
-		var markers = document.createElement('li');
-		markers.appendChild(document.createTextNode(placedMarkerArray[i]));
-		list.appendChild(markers);
+  var list = document.getElementById('ul');
+  for (var i = 0; i < placedMarkerArray.length; i++){
+    var markers = document.createElement('li');
+    markers.appendChild(document.createTextNode(placedMarkerArray[i]));
+    list.appendChild(markers);
 
-	}
-	return list;
+  }
+  return list;
 }
