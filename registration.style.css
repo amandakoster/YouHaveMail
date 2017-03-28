@@ -1,0 +1,287 @@
+/*GLOBAL CSS*/
+body {
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+main{
+  margin: auto;
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  height: 5.5vw;
+}
+
+header {
+  background-color: #D8D8D8;
+  height: 6vw;
+  position: relative;
+  width: 100%;
+}
+#register-link {
+  position: absolute;
+  top: 12%;
+  right: 1%;
+}
+#logo-inner {
+  font-size: 4.5vw;
+}
+.fa {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 10%;
+
+}
+.logo-div {
+  display: block;
+  height: 100%;
+  position: absolute;
+  outline: 1px solid red;
+  width: 25%;
+
+}
+#logo-img {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+}
+#logo-text {
+  display: block;
+  position: absolute;
+  left:23%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vw;
+}
+#logo-text:hover {
+  color: #E71921;
+}
+#footer {
+  height: 26vw;
+  outline: 1px solid red;
+  position: relative;
+  background-color: #f7f7f7;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  color: #333366;
+}
+.li-badges {
+  outline: 1px solid blue;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left-badge {
+  left: 5%;
+}
+.center-badge {
+  left:37%;
+}
+.right-badge {
+  right: 5%;
+}
+
+a:link {
+	color: #333366;
+}
+
+a:visited {
+	color: #333366;
+}
+
+a:hover {
+	color: #E71921;
+}
+
+a:active {
+	color: #333366
+}
+section {
+  margin: auto;
+}
+.sent-gif{
+  position: absolute;
+  top: -101px;
+  left: -154px;
+}
+
+/*MAP CSS*/
+
+.messageSent{
+  position: relative;
+  overflow: hidden;
+  float:right;
+  margin: auto;
+  height:90px;
+  width:100px;
+}
+.numberGrid{
+  text-align: center;
+}
+.gridNumber{
+  float:left;
+  margin-left:55px;
+  margin-top:85px;
+  text-align:center;
+}
+.messageSentText{
+
+  text-align: center;
+}
+.listContainer {
+  border:5px solid;
+  height:100px;
+  margin-top: 15px;
+  width:500px;
+}
+.logOut {
+  float:left;
+  text-align:center;
+}
+
+.logo {
+  height:80px;
+  width:80px;
+}
+div.map{
+  width:390px;
+  height:390px;
+  border-radius: 100px;
+  margin:auto;
+  border:10px dashed black;
+}
+div.markerInputBox{
+  margin:auto;
+  text-align: center;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color:  #333366;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+	line-height: 24px;
+	line-height: 1;
+}
+
+p {
+	font-size: 14px;
+}
+
+hr {
+	width: 75%;
+	color: #E71921;
+	border: 1px;
+	border: thin dashed;
+}
+
+/*REGISTRATION CSS*/
+
+fieldset {
+	border: none;
+}
+
+li, span {
+	font-size: 14px;
+	display: block;
+	line-height: 1.5;
+}
+
+.compliant {
+	background-color: #ffffff;
+	color: #595959;
+	border-width: 1pt;
+	border-color: #595959;
+	Text Gray #595959
+}
+
+div.title_header {
+	position: fixed;
+	padding: 10px 10px 10px 40px;
+	background-color: #333366;
+	width: 1230px;
+	height: 63px;
+	overflow: visible;
+	z-index: 9999;
+}
+
+/*INDEX CSS*/
+#main-content {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  height: 42vw;
+}
+.welcome {
+
+}
+.about-products{
+
+}
+.about-us {
+
+}
+.main-buttons {
+
+}
+#res-button-cont {
+  width: 15%;
+}
+#res-button {
+  float: left;
+}
+#mm-button-cont {
+
+}
+#mm-button {
+  float: right;
+}
+
+
+/*STYLEGUIDE STUFF*/
+
+dt {
+	font-size: 14px;
+	display: block;
+	line-height: 1.5;
+}
+
+dl {
+	text-align: left;
+	padding-left: 30px;
+}
+
+dd {
+	border-style: solid;
+	border: 1px;
+	margin: 10px 40px 10px;
+	text-align: center;
+	line-height: 1.5;
+	display: table-cell;
+	height: 5em;
+}
+
+dd.palette {
+	height: 50px;
+	width: 150px;
+	border: 1px;
+}

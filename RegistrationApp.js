@@ -1,10 +1,10 @@
 'use strict';
 
 var newUserArray = [];
-var persistedUserArray = [];
-document.getElementById('submitButton').addEventListener('click', storeUser);
+// var persistedUserArray = [];
+document.getElementById('submitButton').addEventListener('click', storedUser);
 
-function storeUser() {
+function storedUser() {
   var lsName = document.getElementById('fullName').value;
   var lsUserName = document.getElementById('userName').value;
   var lsMailAddress = document.getElementById('mailAddress').value;
@@ -25,7 +25,7 @@ if (localStorage.userArray) {
   var persistedUserArray = [];
 }
 
-persistedUserArray.push(user);
+persistedUserArray.push(storedUser);
 localStorage.userArray = JSON.stringify(persistedUserArray);
 
 //add event handler
