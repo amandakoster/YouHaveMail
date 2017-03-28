@@ -100,6 +100,7 @@ section {
 
 /*MAP CSS*/
 .messageSent{
+  position:absolute;
   height:100px;
   width:100px;
   float:right;
