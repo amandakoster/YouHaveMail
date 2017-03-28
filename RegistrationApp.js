@@ -1,8 +1,14 @@
 'use strict';
 
+<<<<<<< HEAD
 // harvest form data by getElementById
 var newUserArray = [];
 function storeUserLocalStorage() {
+=======
+var newUserArray = [];
+document.getElementById('submitButton').addEventListener('click', storeUser)
+function storeUser() {
+>>>>>>> 2c6b1b9da4addc7d1d60d8aa7b1e0a66280c19dd
   var lsName = document.getElementById('fullName').value;
   localStorage.setItem('fullName',lsName);
   var lsUserName = document.getElementById('userName').value;
@@ -37,6 +43,7 @@ form.addEventListener('submit', processRegistration);
 //   this.smsNumber = smsNumber;
 //   userArray.push(this);
 // }
+<<<<<<< HEAD
 //
 // if(localStorage.userArray) {
 //   userArray = JSON.parse(localStorage.userArray);
@@ -45,6 +52,16 @@ form.addEventListener('submit', processRegistration);
 // }
 // userArray.push(newUser);
 // localStorage.userArray = JSON.stringify(userArray);
+=======
+
+if(localStorage.userArray) {
+  userArray = JSON.parse(localStorage.userArray);
+} else {
+  var userArray = [];
+}
+userArray.push(storeUser);
+localStorage.userArray = JSON.stringify(userArray);
+>>>>>>> 2c6b1b9da4addc7d1d60d8aa7b1e0a66280c19dd
 // harvest form data - doc.getElementById('id')
 // make user const function
 //harverst data to make/for new user

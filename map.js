@@ -18,7 +18,6 @@ function messageSent() {
   var img = document.createElement("img");
   img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
   messageSent.appendChild(img);
-
 }
 function markerSubmit() {
   var markerInput = document.getElementById('markerInput').value;
