@@ -14,8 +14,8 @@ main{
   position: relative;
   height: 5.5vw;
 }
-header {
 
+header {
   background-color: #D8D8D8;
   height: 6vw;
   position: relative;
@@ -132,6 +132,9 @@ section {
   text-align: center;
 }
 .gridNumber{
+  float:left;
+  margin-left:55px;
+  margin-top:85px;
   text-align:center;
 }
 .messageSentText{

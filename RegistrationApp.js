@@ -1,34 +1,45 @@
 'use strict';
+
 var newUserArray = [];
+var persistedUserArray = [];
 document.getElementById('submitButton').addEventListener('click', storeUser);
 
 function storeUser() {
   var lsName = document.getElementById('fullName').value;
-  localStorage.setItem('fullName', lsName);
   var lsUserName = document.getElementById('userName').value;
-  localStorage.setItem('userName', lsUserName);
   var lsMailAddress = document.getElementById('mailAddress').value;
-  localStorage.setItem('mailAddress', lsMailAddress);
   var lsEmailAddress = document.getElementById('emailAddress').value;
-  localStorage.setItem('emailAddress', lsEmailAddress);
   var lsSMS = document.getElementById('sms').value;
-  localStorage.setItem('sms', lsSMS);
-  newUserArray.push(lsName, lsUserName, lsMailAddress, lsEmailAddress, lsSMS);
+  var user = {} ;
+  user['fullName'] = lsName;
+  user['userName'] = lsUserName;
+  user['mailAddress'] = lsMailAddress;
+  user['emailAddress'] = lsemailAddress;
+  user['sms'] = lsSMS;
+  newUserArray.push(user);
 };
-//add event handler
-function processRegistration(event) {
-  event.preventDefault();
-  event.target.elements.username.value; // gets value of username field
-  document.getElementById('username').value;
-}
 
 if (localStorage.userArray) {
-  userArray = JSON.parse(localStorage.userArray);
-} else {
-  var userArray = [];
+  var persistedUserArray = JSON.parse(localStorage.userArray);
+} else { // if array is not in localStorage already
+  var persistedUserArray = [];
 }
-userArray.push(storeUser);
-localStorage.userArray = JSON.stringify(userArray);
+
+persistedUserArray.push(user);
+localStorage.userArray = JSON.stringify(persistedUserArray);
+
+//add event handler
+// function processRegistration(event) {
+//   event.preventDefault();
+//   event.target.elements.username.value; // gets value of username field
+//   document.getElementById('username').value;
+//
+// if (localStorage.userArray) {
+//   userArray = JSON.parse(localStorage.userArray);
+// } else {
+// }
+// userArray.push(storeUser);
+// localStorage.userArray = JSON.stringify(userArray);
 
 //add event listener
 // storeUserLocalStorage();
