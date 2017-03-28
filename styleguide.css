@@ -8,7 +8,7 @@ main{
   width: 100%;
   margin: inherit;
 }
-header {
+#header {
   width: 100%;
   position: relative;
   height: 5.5vw;
