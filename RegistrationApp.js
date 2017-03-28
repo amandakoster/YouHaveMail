@@ -2,10 +2,10 @@
 
 // get all input from in the form
 var newUserArray = [];
-
-function submitUser() {
-  var lsName = document.getElementById('name').value;
-  localStorage.setItem('name',lsName);
+function storeUser() {
+  debugger;
+  var lsName = document.getElementById('fullName').value;
+  localStorage.setItem('fullName',lsName);
   var lsUserName = document.getElementById('userName').value;
   localStorage.setItem('userName',lsUserName);
   var lsMailAddress = document.getElementById('mailAddress').value;
@@ -16,15 +16,34 @@ function submitUser() {
   localStorage.setItem('sms', lsSMS);
   newUserArray.push(lsName, lsUserName, lsMailAddress, lsEmailAddress, lsSMS);
 };
-submitUser();
 
-// push add id vaput into an array
+function processRegistration (event) {
+  event.preventDefault();
+  event.target.elements.username.value; // gets value of username field
+  document.getElementById('username').value;
+}
 
-// function userSubmit() {
-//
+// var userArray = [];
+// function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
+//   this.resName = resName;
+//   this.userName = userName;
+//   this.mailAddress = mailAddress;
+//   this.emailAddress = emailAddress;
+//   this.smsNumber = smsNumber;
+//   userArray.push(this);
 // }
 
-// story the array in local storage.
+if(localStorage.userArray) {
+  userArray = JSON.parse(localStorage.userArray);
+} else {
+  userArray = [];
+}
+userArray.push(newUser);
+localStorage.userArray = JSON.stringify(userArray);
+// harvest form data - doc.getElementById('id')
+// make user const function
+//harverst data to make/for new user
+//check local storage if empty, if not emoty then... (JSON)
 
 // var inputName = document.getElementById('name').value;
 // localStorage.setItem('inputName', name);
@@ -37,16 +56,7 @@ submitUser();
 // // Create object constructor for new users
 // var userArray = [];
 //
-//   var userArray = [];
-//
-//   function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
-//   this.resName = resName;
-//   this.userName = userName;
-//   this.mailAddress = mailAddress;
-//   this.emailAddress = emailAddress;
-//   this.smsNumber = smsNumber;
-//   userArray.push(this);
-// }
+
 //
 // newUser();
 //
