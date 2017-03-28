@@ -23,17 +23,23 @@ function processRegistration (event) {
   document.getElementById('username').value;
 }
 
-var userArray = [];
+// var userArray = [];
+// function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
+//   this.resName = resName;
+//   this.userName = userName;
+//   this.mailAddress = mailAddress;
+//   this.emailAddress = emailAddress;
+//   this.smsNumber = smsNumber;
+//   userArray.push(this);
+// }
 
-function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
-  this.resName = resName;
-  this.userName = userName;
-  this.mailAddress = mailAddress;
-  this.emailAddress = emailAddress;
-  this.smsNumber = smsNumber;
-  userArray.push(this);
+if(localStorage.userArray) {
+  userArray = JSON.parse(localStorage.userArray);
+} else {
+  userArray = [];
 }
-
+userArray.push(newUser);
+localStorage.userArray = JSON.stringify(userArray);
 // harvest form data - doc.getElementById('id')
 // make user const function
 //harverst data to make/for new user
