@@ -43,7 +43,7 @@ function initMap() {
  	position: gas76,
  	map:map,
   });
-   placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label).sort;
+   placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
 google.maps.event.addListener(map, 'click', function(event) {
    placeMarker(event.latLng);
 });
