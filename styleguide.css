@@ -145,6 +145,9 @@ section {
   text-align: center;
 }
 .gridNumber{
+  float:left;
+  margin-left:55px;
+  margin-top:85px;
   text-align:center;
 
 }
