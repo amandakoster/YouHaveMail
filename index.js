@@ -36,7 +36,7 @@ resButton.addEventListener('click', function(){
   submitButton.setAttribute('type','submit');
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
-  submitButton.addEventListener('click',function() {
-    prevent.defautlt()
-  })
+  submitButton.addEventListener('submit',function(e) {
+    e.preventDefault();
+  });
 });
