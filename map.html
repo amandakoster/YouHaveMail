@@ -8,17 +8,23 @@
 </head>
 	<body>
 		<header>
-			<section>
-				<div><a href="index.html"><img class="logo" src="https://www.placehold.it/80"></a></div>
-			</section>
+			<div class="logo-div"><a id="logo-img" href="index.html"><img src="img/favicon-envelope.ico" class="fa" aria-hidden="true" /><h2 id="logo-text">You Have Mail!</h2></a></div>
 		</header>
 
 		<main>
+		<div class="gridNumber"><p>Gird Id #</p></div>
+		<div class="numberGrid"><p>12</p></div>
 			<div id="map" class="map"></div>
 			<div class="markerInputBox">
 				<input type="number" id="markerInput" />
-				<button type="submit" id="markerSubmitButton"> Submit M #</button>
+				<button type="submit" id="markerSubmitButton"> Enter Grid id</button>
 			</div>
+			<div>
+				<p class="messageSentText">A message has been sent to the following location markers:</p>
+			</div>
+			<section class="listContainer">
+				<div class="ul" id="ul"></div>
+			</section>
 		</main>
 
 		<footer>
