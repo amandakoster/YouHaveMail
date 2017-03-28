@@ -99,11 +99,12 @@ section {
 }
 
 /*MAP CSS*/
+
 .messageSent{
-  position:absolute;
+  border:5px solid blue;
+  margin: auto;
   height:100px;
   width:100px;
-  float:right;
 }
 .numberGrid{
  float:left;
@@ -123,7 +124,7 @@ section {
   border:5px solid;
   height:200px;
   margin-top: 15px;
-  width:650px;
+  width:500px;
 }
 .logOut {
   position: absolute;
@@ -133,7 +134,7 @@ section {
   text-align:center;
 }
 
-img.logo {
+.logo {
   height:80px;
   width:80px;
 }
