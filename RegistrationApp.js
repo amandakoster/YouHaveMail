@@ -1,9 +1,8 @@
 'use strict';
 
-// get all input from in the form
 var newUserArray = [];
+document.getElementById('submitButton').addEventListener('click', storeUser)
 function storeUser() {
-  debugger;
   var lsName = document.getElementById('fullName').value;
   localStorage.setItem('fullName',lsName);
   var lsUserName = document.getElementById('userName').value;
@@ -36,9 +35,9 @@ function processRegistration (event) {
 if(localStorage.userArray) {
   userArray = JSON.parse(localStorage.userArray);
 } else {
-  userArray = [];
+  var userArray = [];
 }
-userArray.push(newUser);
+userArray.push(storeUser);
 localStorage.userArray = JSON.stringify(userArray);
 // harvest form data - doc.getElementById('id')
 // make user const function
