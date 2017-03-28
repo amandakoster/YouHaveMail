@@ -26,21 +26,18 @@
 	<h2>Welcome! Please enter your information in the form below.</h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
 
-	<form>
+	<form id="registration">
 		<fieldset>
-		<div id="name">Name: <input type="text"></div>
-		<div id="userName">User Name: <input type="text"></div>
-		<div id="mailAddress">Mailing address: <input type="text"></div>
-		<div id="emailAddress">Email address: <input type="text"></div>
-		<div id="sms">SMS: <input type="number"></div>
+		<div>Name: <input type="text" id="fullName"></div>
+		<div>User Name: <input id="username" id="userName" type="text" name="username"></div>
+		<div>Mailing address: <input id="mailAddress" type="text"></div>
+		<div>Email address: <input id="emailAddress" type="text"></div>
+		<div>SMS: <input id="sms" type="number"></div>
 		<button type="submit" id="submitButton">Submit</button>
-
-		<div id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</div>
-
-
-		<input id="selectSms" type="checkbox" value="sms">SMS</label>
-		<input id="selectEmail" type="checkbox" value="email">Email</label>
-	</fieldset> 
+		<div>Great! Now, choose how would like to be alerted once your mail is delivered:</div>
+		<div><input id="selectSms" type="checkbox" value="sms">SMS</div>
+		<div><input id="selectEmail" type="checkbox" value="email">Email</div>
+	</fieldset>
 	</form>
 
 	<!-- <main>
