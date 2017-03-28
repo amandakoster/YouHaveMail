@@ -2,58 +2,61 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<title>You Have Mail</title>
-	<link rel="stylesheet" href="styleguide.css">
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-	<script src="https://use.fontawesome.com/20877e6602.js"></script>
-	<script src="RegistrationApp.js"></script>
+	<link href="styleguide.css" rel="stylesheet">
+	<script async defer src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript">
+	</script>
+	<script src="https://use.fontawesome.com/20877e6602.js">
+	</script>
 </head>
+
+
 <body>
 	<header>
 		<section>
 			<div class="logo-div">
-				<a id="logo-img" href="index.html"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
+				<a href="index.html" id="logo-img"><i aria-hidden="true" class="fa fa-envelope fa-3x"></i>
+				<h2 id="logo-text">You Have Mail!</h2></a>
 			</div>
 		</section>
 	</header>
-<body>
+
 	<h1>You Have Mail: Registration</h1>
 	<h2>Welcome! Please enter your information in the form below.</h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
-	<div id="form">
-		<form id="resForm" method="get" name="res-form">
-			<fieldset>
-				<ul id="resInput">
-					<li><label for="resName">Name:</label> <input id="resname" maxlength="30" name="resName" type="text"></li>
-					<li><label for="resUserName">User name:</label> <input id="resusername" maxlength="30" name="resUserName" type="text"></li>
-					<li><label for="mailAddress">Mailing address:</label> <input id="mailaddress" name="mailAddress" type="text"></li>
-					<li><label for="emailAddress">Email address:</label> <input id="emailaddress" name="emailAddress" type="text"></li>
-					<li><label for="smsNumber"></label>SMS: <input id="smsnumber" maxlength="10" name="smsNumber" type="number"></li>
 
-					<li><button type="submit" id="userSubmitButton">Submit</button>
+	<form>
+		<div id="name">Name: <input type="text"></div>
+		<div id="userName">User Name: <input type="text"></div>
+		<div id="mailAddress">Mailing address: <input type="text"></div>
+		<div id="emailAddress">Email address: <input type="text"></div>
+		<div id="sms">SMS: <input type="number"></div>
+		<button id="submitButton" type="submit">Submit</button>
+		<div id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</div>
+		<input id="selectSms" type="checkbox" value="sms">SMS</label>
+		<input id="selectEmail" type="checkbox" value="email">Email</label>
+	</form>
 
-				</ul>
-			</fieldset>
-		</form>
-				<p id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</p>
-				<ul id="regCheckbox">
-				<li><input id="selectSms" type="checkbox" value="sms_checkbox"> <label for="cbox1">SMS</label></li>
-				<li><input checked="checked" id="selectEmail" type="checkbox" value="email_checkbox"> <label for="cbox2">Email</label></li>
-	</div>
-	<!-- <script src="app.js"> -->
-	</script>
 	<footer id="footer">
 		<h3>About Our Team</h3>
 		<div class="li-badges left-badge">
-			<div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jt-salamon-12237b82"><a class="LI-simple-link" href='https://www.linkedin.com/in/jt-salamon-12237b82?trk=profile-badge'>jt salamon</a></div>
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="jt-salamon-12237b82" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/jt-salamon-12237b82?trk=profile-badge'>jt salamon</a>
+			</div>
 		</div>
 		<div class="li-badges center-badge">
-			<div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="amandakoster"><a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a></div>
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="amandakoster" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/amandakoster?trk=profile-badge'>Amanda Koster</a>
+			</div>
 		</div>
 		<div class="li-badges right-badge">
-			<div class="LI-profile-badge"  data-version="v1" data-size="small" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="michael-miller-b1a5967a"><a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a></div>
+			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="michael-miller-b1a5967a" data-version="v1">
+				<a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a>
+			</div>
 		</div>
 	</footer>
+	<script src="RegistrationApp.js">
+	</script>
 </body>
 </html>
