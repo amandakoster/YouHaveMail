@@ -8,6 +8,7 @@ resButton.addEventListener('click', function(){
   resButton.remove();
   var form = document.createElement('form');
   resButtonCont.appendChild(form);
+  form.setAttribute('id','form');
   var inputEmail = document.createElement('input');
   inputEmail.setAttribute('type', 'email');
 
@@ -35,4 +36,7 @@ resButton.addEventListener('click', function(){
   submitButton.setAttribute('type','submit');
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
+  submitButton.addEventListener('click',function() {
+    prevent.defautlt()
+  })
 });

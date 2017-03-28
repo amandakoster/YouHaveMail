@@ -13,9 +13,6 @@ main{
   width: 100%;
   position: relative;
   height: 5.5vw;
-
-header {
-
   background-color: #D8D8D8;
   height: 6vw;
   position: relative;
@@ -31,18 +28,12 @@ header {
 }
 .fa {
   left: 2%;
-
   top: 50%;
   transform: translateY(-50%);
-
   position: absolute;
-  top: 10%;
-
 }
 .logo-div {
   display: block;
-
-
   height: 100%;
   position: absolute;
   outline: 1px solid red;
@@ -133,7 +124,7 @@ section {
 .gridNumber{
   float:left;
   margin-left:55px;
-  margin-top:85px; 
+  margin-top:85px;
 }
 .messageSentText{
   margin-top:100px;
@@ -255,6 +246,9 @@ div.title_header {
 }
 #mm-button {
   float: right;
+}
+#form {
+  float:left;
 }
 
 
