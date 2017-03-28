@@ -1,9 +1,8 @@
 'use strict';
 
-// get all input from in the form
+// harvest form data by getElementById
 var newUserArray = [];
-function storeUser() {
-  debugger;
+function storeUserLocalStorage() {
   var lsName = document.getElementById('fullName').value;
   localStorage.setItem('fullName',lsName);
   var lsUserName = document.getElementById('userName').value;
@@ -17,11 +16,17 @@ function storeUser() {
   newUserArray.push(lsName, lsUserName, lsMailAddress, lsEmailAddress, lsSMS);
 };
 
+//add event handler
 function processRegistration (event) {
+  debugger;
   event.preventDefault();
   event.target.elements.username.value; // gets value of username field
   document.getElementById('username').value;
 }
+
+//add event listener
+storeUserLocalStorage();
+form.addEventListener('submit', processRegistration);
 
 // var userArray = [];
 // function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
@@ -32,14 +37,14 @@ function processRegistration (event) {
 //   this.smsNumber = smsNumber;
 //   userArray.push(this);
 // }
-
-if(localStorage.userArray) {
-  userArray = JSON.parse(localStorage.userArray);
-} else {
-  userArray = [];
-}
-userArray.push(newUser);
-localStorage.userArray = JSON.stringify(userArray);
+//
+// if(localStorage.userArray) {
+//   userArray = JSON.parse(localStorage.userArray);
+// } else {
+//   userArray = [];
+// }
+// userArray.push(newUser);
+// localStorage.userArray = JSON.stringify(userArray);
 // harvest form data - doc.getElementById('id')
 // make user const function
 //harverst data to make/for new user
