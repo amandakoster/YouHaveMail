@@ -112,12 +112,18 @@ a:active {
 section {
   margin: auto;
 }
+.sent-gif{
+  position: absolute;
+  top: -101px;
+  left: -154px;
+}
 
 /*MAP CSS*/
 
 .messageSent{
+  position: relative;
+  overflow: hidden;
   float:right;
-  border:5px solid blue;
   margin: auto;
   height:90px;
   width:100px;
