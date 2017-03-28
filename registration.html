@@ -10,8 +10,6 @@
 	<script src="https://use.fontawesome.com/20877e6602.js">
 	</script>
 </head>
-
-
 <body>
 	<header>
 		<section>
@@ -21,36 +19,41 @@
 			</div>
 		</section>
 	</header>
-
 	<h1>You Have Mail: Registration</h1>
 	<h2>Welcome! Please enter your information in the form below.</h2>
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
+	<form id="form" name="form">
+		<fieldset>
+			<div>Name: <input id="fullName" type="text">
+			</div>
+			<div>User Name: <input id="userName" type="text">
+			</div>
+			<div>
+				Mailing address: <input id="mailAddress" type="text">
+			</div>
+			<div>Email address: <input id="emailAddress" type="text">
+			</div>
+			<div>SMS: <input id="sms" type="number">
+			</div>
 
-	<form>
-		<div id="name">Name: <input type="text"></div>
-		<div id="userName">User Name: <input type="text"></div>
-		<div id="mailAddress">Mailing address: <input type="text"></div>
-		<div id="emailAddress">Email address: <input type="text"></div>
-		<div id="sms">SMS: <input type="number"></div>
-
-
-		<button type="submit" id="submitButton">Submit</button>
-
-		<div id="alertChoice">Great! Now, choose how would like to be alerted once your mail is deleivered:</div>
-
-
-		<input id="selectSms" type="checkbox" value="sms">SMS</label>
-		<input id="selectEmail" type="checkbox" value="email">Email</label>
-	</form>
-
-	<!-- <main>
-		<div id="map" class="map"></div>
-		<div class="markerInputBox">
-			<input type="number" id="markerInput" />
-			<button type="submit" id="markerSubmitButton"> Submit M #</button>
-		</div>
-	</main> -->
-
+			<button id="submitButton" type="submit">Submit</button>
+			<div>
+				Great! Now, choose how would like to be alerted once your mail is delivered:
+			</div>
+			<div>
+				<input id="selectSms" type="checkbox" value="sms">SMS
+			</div>
+			<div>
+				<input id="selectEmail" type="checkbox" value="email">Email
+			</div>
+		</fieldset>
+	</form><!-- <main>
+        <div id="map" class="map"></div>
+        <div class="markerInputBox">
+            <input type="number" id="markerInput" />
+            <button type="submit" id="markerSubmitButton"> Submit M #</button>
+        </div>
+    </main> -->
 	<footer id="footer">
 		<h3>About Our Team</h3>
 		<div class="li-badges left-badge">

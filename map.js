@@ -1,20 +1,89 @@
+'use strict';
+var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
-function markerSubmit() {
+document.getElementById('markerSubmitButton').addEventListener('click', createList);
+document.getElementById('markerSubmitButton').addEventListener('click', messageSent);
 
+// document.getElementById('markerSubmitButton').addEventListener('click', error);
+//
+// function error() {
+//   var markerInput = document.getElementById('markerInput').value;
+//   while(markerInput !== '12'){
+//     alert('Please enter the right grid Id #');
+//     break;
+//   }
+// }
+function messageSent() {
+  var messageSent = document.getElementById('messageSent');
+  var img = document.createElement("img");
+  img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
+  messageSent.appendChild(img);
+}
+function markerSubmit() {
   var markerInput = document.getElementById('markerInput').value;
   localStorage.setItem('submittedInput', markerInput);
-  alert('Messages have been sent to marker ' + markerInput + '. Which include houses A,B,C and D.');
   document.getElementById('markerInput').value = '';
 }
 function initMap() {
-  var uluru = {lat: 47.6182, lng: -122.3518};
+  var codeFellows = {lat: 47.6182, lng: -122.3518};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 18,
-    center: uluru
+    zoom: 17,
+    center: codeFellows
   });
   var marker = new google.maps.Marker({
-    position: uluru,
+    name:'Code Fellows',
+  	label: 'C',
+    position: codeFellows,
     map: map
   });
+  var bank = {lat: 47.6175, lng: -122.3520};
+  var markerBank = new google.maps.Marker({
+    name:'Banner Bank',
+   	label: 'E',
+   	position: bank,
+   	map:map
+    });
+  var kiro = {lat: 47.6193, lng: -122.3504};
+  var markerKiro = new google.maps.Marker({
+    name:'Kiro 7',
+   	label: 'A',
+   	position: kiro,
+   	map:map,
+    });
+  var pSC = {lat: 47.6178, lng: -122.3514};
+  var markerPSC = new google.maps.Marker({
+    name:'Pacific Science Center',
+   	label: 'D',
+   	position: pSC,
+   	map:map,
+    });
+  var gas76 = {lat: 47.6192, lng: -122.3517};
+  var markerGas76 = new google.maps.Marker({
+    name:'76',
+   	label: 'B',
+   	position: gas76,
+   	map:map,
+    });
+  placedMarkerArray.push(marker.position, markerBank.position, markerKiro.position, markerGas76.position, markerPSC.position);
+  google.maps.event.addListener(map, 'click', function(event) {
+    placeMarker(event.latLng);
+  });
 
+  function placeMarker(location) {
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+    placedMarkerArray.push(marker.position);
+  }
+}
+function createList() {
+  var list = document.getElementById('ul');
+  for (var i = 0; i < placedMarkerArray.length; i++){
+    var markers = document.createElement('li');
+    markers.appendChild(document.createTextNode(placedMarkerArray[i]));
+    list.appendChild(markers);
+
+  }
+  return list;
 }

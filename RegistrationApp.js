@@ -1,32 +1,77 @@
-var name = document.getElementById('name').value;
-localStorage.setItem('name', name);
+'use strict';
+var newUserArray = [];
+document.getElementById('submitButton').addEventListener('click', storeUser);
 
-var submitButton = document.getElementById('submitButton');
-submitButton.addEventListener('click',function(){
-  alert('Thanks for signing up!');
-});
+function storeUser() {
+  var lsName = document.getElementById('fullName').value;
+  localStorage.setItem('fullName', lsName);
+  var lsUserName = document.getElementById('userName').value;
+  localStorage.setItem('userName', lsUserName);
+  var lsMailAddress = document.getElementById('mailAddress').value;
+  localStorage.setItem('mailAddress', lsMailAddress);
+  var lsEmailAddress = document.getElementById('emailAddress').value;
+  localStorage.setItem('emailAddress', lsEmailAddress);
+  var lsSMS = document.getElementById('sms').value;
+  localStorage.setItem('sms', lsSMS);
+  newUserArray.push(lsName, lsUserName, lsMailAddress, lsEmailAddress, lsSMS);
+};
+//add event handler
+function processRegistration(event) {
+  event.preventDefault();
+  event.target.elements.username.value; // gets value of username field
+  document.getElementById('username').value;
+}
 
-//
-// // Create object constructor for new users
+if (localStorage.userArray) {
+  userArray = JSON.parse(localStorage.userArray);
+} else {
+  var userArray = [];
+}
+userArray.push(storeUser);
+localStorage.userArray = JSON.stringify(userArray);
+
+//add event listener
+// storeUserLocalStorage();
+// form.addEventListener('submit', processRegistration);
 // var userArray = [];
-//
 // function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
 //   this.resName = resName;
 //   this.userName = userName;
 //   this.mailAddress = mailAddress;
 //   this.emailAddress = emailAddress;
 //   this.smsNumber = smsNumber;
-//   this.userArray = [];
 //   userArray.push(this);
 // }
 //
-// newUser();
+// if(localStorage.userArray) {
+//   userArray = JSON.parse(localStorage.userArray);
+// } else {
+//   userArray = [];
+// }
+// userArray.push(newUser);
+// localStorage.userArray = JSON.stringify(userArray);
 
+// harvest form data - doc.getElementById('id')
+// make user const function
+//harverst data to make/for new user
+//check local storage if empty, if not emoty then... (JSON)
+// var inputName = document.getElementById('name').value;
+// localStorage.setItem('inputName', name);
+//
+// var submitButton = document.getElementById('submitButton');
+// submitButton.addEventListener('click', newUser);
+// submitButton.addEventListener('signUp');
+// alert('Thanks for signing up!');
+// // Create object constructor for new users
+// var userArray = [];
+//
+//
+// newUser();
+//
 // Create form
 // var event = newUser;
 //
 // }
-
 //
 // event.preventDefault();
 // var resName = event.target.elements.resName;

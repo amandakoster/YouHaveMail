@@ -1,18 +1,25 @@
 /*GLOBAL CSS*/
 body {
-  width: 95%;
   margin: auto;
   padding: 0;
+  width: 95%;
 }
 main{
-  width: 100%;
   margin: inherit;
+  width: 100%;
 }
+
 #header {
   width: 100%;
   position: relative;
   height: 5.5vw;
+
+header {
+
   background-color: #D8D8D8;
+  height: 6vw;
+  position: relative;
+  width: 100%;
 }
 #register-link {
   position: absolute;
@@ -23,17 +30,24 @@ main{
   font-size: 4.5vw;
 }
 .fa {
-  position: absolute;
   left: 2%;
+
   top: 50%;
   transform: translateY(-50%);
+
+  position: absolute;
+  top: 10%;
+
 }
 .logo-div {
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  left: 0%;
   display: block;
+
+
+  height: 100%;
+  position: absolute;
+  outline: 1px solid red;
+  width: 25%;
+
 }
 #logo-img {
 position: absolute;
@@ -104,27 +118,54 @@ section {
 }
 
 /*MAP CSS*/
-div.logOut {
+
+.messageSent{
+  border:5px solid blue;
+  margin: auto;
+  height:100px;
+  width:100px;
+}
+.numberGrid{
+ float:left;
+ margin-left: 5px;
+ margin-top: 85px;
+}
+.gridNumber{
+  float:left;
+  margin-left:55px;
+  margin-top:85px; 
+}
+.messageSentText{
+  margin-top:100px;
+  text-align: center;
+}
+.listContainer {
+  border:5px solid;
+  height:200px;
+  margin-top: 15px;
+  width:500px;
+}
+.logOut {
+  position: absolute;
+  top: 96%;
+  left: 2%;
+  float:left;
   text-align:center;
 }
-#map {
-  height: 400px;
-  width: 400px;
-}
-img.logo {
+
+.logo {
   height:80px;
   width:80px;
-  display:inline;
 }
 div.map{
   width:400px;
   height:400px;
-  border-radius: 10px;
-  margin: 0 auto;
-  text-align: center;
+  border-radius: 100px;
+  margin:auto;
+  border:10px dashed black;
 }
 div.markerInputBox{
-  margin: 0 auto;
+  margin-top:10px;
   text-align: center;
 }
 
@@ -138,15 +179,13 @@ h1 {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	margin: 40% font-size: 14px;
+   font-size: 14px;
 	line-height: 24px;
 	line-height: 1;
 }
 
 p {
 	font-size: 14px;
-	display: block;
-	line-height: 1;
 }
 
 hr {
