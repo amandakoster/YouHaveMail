@@ -1,8 +1,18 @@
 'use strict';
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
-document.getElementById('markerSubmitButton').addEventListener('click', createList);
+// document.getElementById('markerSubmitButton').addEventListener('click', createList);
+document.getElementById('markerSubmitButton').addEventListener('click', error);
 
+function error() {
+	var markerInput = document.getElementById('markerInput').value;
+	while(markerInput !== '12'){
+		alert('Please enter the right grid Id #');
+		break;
+	}
+	
+	
+}
 function markerSubmit() {
 
   var markerInput = document.getElementById('markerInput').value;
@@ -63,6 +73,7 @@ function createList() {
 		var markers = document.createElement('li');
 		markers.appendChild(document.createTextNode(placedMarkerArray[i]));
 		list.appendChild(markers);
+
 	}
 	return list;
 }
