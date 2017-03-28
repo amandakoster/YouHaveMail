@@ -1,8 +1,11 @@
 var name = document.getElementById('name').value;
 localStorage.setItem('name', name);
 
-document.getElementById('submitButton').addEventListener('click',function userSubmit(){
-alert('Thanks for registering!');
+var submitButton = document.getElementById('submitButton');
+submitButton.addEventListener('click',function(){
+  alert('Thanks for signing up!');
+});
+
 //
 // // Create object constructor for new users
 // var userArray = [];
