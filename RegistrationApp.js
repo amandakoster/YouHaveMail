@@ -1,3 +1,11 @@
+var name = document.getElementById('name').value;
+localStorage.setItem('name', name);
+
+var submitButton = document.getElementById('submitButton');
+submitButton.addEventListener('click',function(){
+  alert('Thanks for signing up!');
+});
+
 //
 // // Create object constructor for new users
 // var userArray = [];
@@ -16,9 +24,9 @@
 
 // Create form
 // var event = newUser;
-document.getElementById('submit').addEventListener('click', function(){
-  alert('Thanks for registering!');
-});
+//
+// }
+
 //
 // event.preventDefault();
 // var resName = event.target.elements.resName;
