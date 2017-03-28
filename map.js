@@ -10,7 +10,6 @@ document.getElementById('markerSubmitButton').addEventListener('click', createLi
 //     alert('Please enter the right grid Id #');
 //     break;
 //   }
-//
 // }
 function markerSubmit() {
   var markerInput = document.getElementById('markerInput').value;
