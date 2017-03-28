@@ -1,27 +1,41 @@
-var name = document.getElementById('name').value;
-localStorage.setItem('name', name);
+'use strict';
+
+// get all input from in the form
+
+var submitName = document.getElementById('name').value;
+localStorage.setItem('name', lsName);
+var submitUserName = document.getElementsByClassName('userName');
+localStorage.setItem('userName',lsUserName);
+var submitMailAddress = document.getElementById();
+localStorage.setItem('mailAddress', ls);
+// push add id vaput into an array
+
+// story the array in local storage.
+
+var inputName = document.getElementById('name').value;
+localStorage.setItem('inputName', name);
 
 var submitButton = document.getElementById('submitButton');
-submitButton.addEventListener('click',function(){
-  alert('Thanks for signing up!');
-});
+submitButton.addEventListener('click', newUser);
+submitButton.addEventListener('signUp');
+alert('Thanks for signing up!');
 
-//
 // // Create object constructor for new users
 // var userArray = [];
 //
-// function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
+//   var userArray = [];
+//
+//   function newUser(resName,userName, mailAddress,emailAddress,smsNumber) {
 //   this.resName = resName;
 //   this.userName = userName;
 //   this.mailAddress = mailAddress;
 //   this.emailAddress = emailAddress;
 //   this.smsNumber = smsNumber;
-//   this.userArray = [];
 //   userArray.push(this);
 // }
 //
 // newUser();
-
+//
 // Create form
 // var event = newUser;
 //
