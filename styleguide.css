@@ -100,6 +100,11 @@ section {
 }
 
 /*MAP CSS*/
+div.ul {
+  position:absolute;
+  width:200px;
+  height:200px;
+}
 div.logOut {
   position: absolute;
   top: 96%;

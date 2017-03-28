@@ -1,12 +1,12 @@
 'use strict';
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
+document.getElementById('markerSubmitButton').addEventListener('click', createList);
+
 function markerSubmit() {
 
   var markerInput = document.getElementById('markerInput').value;
   localStorage.setItem('submittedInput', markerInput);
-
-  alert('Messages have been sent to marker ' + markerInput + '. Which include the following buildings.');
   document.getElementById('markerInput').value = '';
 }
 function initMap() {
@@ -22,7 +22,7 @@ function initMap() {
   });
  var bank = {lat: 47.6175, lng: -122.3520}
  var markerBank = new google.maps.Marker({
- 	label: 'B',
+ 	label: 'E',
  	position: bank,
  	map:map
   });
@@ -40,13 +40,13 @@ function initMap() {
   });
  var gas76 = {lat: 47.6192, lng: -122.3517}
  var markerGas76 = new google.maps.Marker({
- 	label: 'E',
+ 	label: 'B',
  	position: gas76,
  	map:map,
   });
-   placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
+placedMarkerArray.push(marker.label, markerBank.label, markerKiro.label, markerGas76.label, markerPSC.label);
 google.maps.event.addListener(map, 'click', function(event) {
-   placeMarker(event.latLng);
+placeMarker(event.latLng);
 });
 
 function placeMarker(location) {
@@ -55,26 +55,14 @@ function placeMarker(location) {
         map: map
     });
 
-<<<<<<< HEAD
-=======
-  alert('Messages have been sent to marker ' + markerInput + '. Which include houses A,B,C and D.');
-  document.getElementById('markerInput').value = '';
 }
-function initMap() {
-  var uluru = {lat: 47.6182, lng: -122.3518};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 18,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-
-
->>>>>>> 2627904328be632afb42d687082255c537b77b7f
 }
-};
-
-
-
+function createList() {
+	var list = document.getElementById('ul');
+	for (var i = 0; i < placedMarkerArray.length; i++){
+		var markers = document.createElement('li');
+		markers.appendChild(document.createTextNode(placedMarkerArray[i]));
+		list.appendChild(markers);
+	}
+	return list;
+}
