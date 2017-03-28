@@ -16,6 +16,7 @@ document.getElementById('markerSubmitButton').addEventListener('click', messageS
 function messageSent() {
   var messageSent = document.getElementById('messageSent');
   var img = document.createElement("img");
+  img.setAttribute('class', 'sent-gif');
   img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
   messageSent.appendChild(img);
 }
