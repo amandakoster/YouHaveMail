@@ -11,7 +11,7 @@ main{
 header {
   width: 100%;
   position: relative;
-  height: 6vw;
+  height: 5.5vw;
   background-color: #D8D8D8;
 }
 #register-link {
@@ -19,10 +19,14 @@ header {
   top: 12%;
   right: 1%;
 }
+#logo-inner {
+  font-size: 4.5vw;
+}
 .fa {
   position: absolute;
   left: 2%;
-  top: 10%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .logo-div {
   position: absolute;
@@ -30,23 +34,22 @@ header {
   height: 100%;
   left: 0%;
   display: block;
-  outline: 1px solid red;
 }
 #logo-img {
 position: absolute;
 display: block;
 width: 100%;
-outline: 1px solid yellow;
 height: 100%;
 }
 #logo-text {
   display: block;
   position: absolute;
   left:23%;
-  top: 33%;
-  outline: 1px solid blue;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 0;
   margin: 0;
+  font-size: 2.5vw;
 }
 #logo-text:hover {
   color: #E71921;
