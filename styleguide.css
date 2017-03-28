@@ -9,7 +9,6 @@ body {
   width: 95%;
 }
 main{
-
   margin: auto;
   width: 100%;
   background-color: #D8D8D8;
@@ -20,10 +19,6 @@ main{
   position: relative;
   height: 5.5vw;
   background-color: #333366;
-}
-header {
-  background-color: #D8D8D8;
-}
   height: 6vw;
   position: relative;
   width: 100%;
@@ -152,7 +147,7 @@ section {
 
 }
 .messageSentText{
- 
+
   text-align: center;
 }
 .listContainer {
