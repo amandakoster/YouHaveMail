@@ -245,3 +245,16 @@ height: 15.2vw;
   margin-top: 3vw;
   margin-right: 14vw;
 }
+#input-email {
+  width: 22vw;
+  height: 3vw;
+}
+#input-password {
+  width: 22vw;
+  height: 3vw;
+}
+#input-id {
+  width: 22vw;
+  height: 3vw;
+  margin-top: 3vw;
+}
