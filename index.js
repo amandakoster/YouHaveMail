@@ -13,12 +13,14 @@ resButton.addEventListener('click', function(event){
   form.setAttribute('id','res-form');
   resButtonCont.appendChild(form);
   var inputEmail = document.createElement('input');
+  inputEmail.setAttribute('id','input-email');
   inputEmail.setAttribute('autofocus','true');
   inputEmail.style.borderRadius = '3px';
   inputEmail.setAttribute('type', 'email');
   inputEmail.setAttribute('placeholder','E-mail');
   form.appendChild(inputEmail);
   var inputPassword = document.createElement('input');
+  inputPassword.setAttribute('id','input-password');
   inputPassword.style.borderRadius = '3px';
   inputPassword.setAttribute('type','password');
   inputPassword.setAttribute('placeholder','Password');
