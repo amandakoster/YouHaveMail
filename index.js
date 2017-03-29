@@ -3,40 +3,57 @@
 var resButton = document.getElementById('res-button');
 var mmButton = document.getElementById('mm-button');
 var resButtonCont = document.getElementById('res-button-cont');
+var mmButtonCont = document.getElementById('mm-button-cont');
 
-resButton.addEventListener('click', function(){
+resButton.addEventListener('click', function(event){
+  event.preventDefault();
   resButton.remove();
   var form = document.createElement('form');
+  form.setAttribute('id','res-form');
   resButtonCont.appendChild(form);
-  form.setAttribute('id','form');
   var inputEmail = document.createElement('input');
+  inputEmail.style.borderRadius = '3px';
   inputEmail.setAttribute('type', 'email');
-
+  inputEmail.setAttribute('placeholder','E-mail');
   form.appendChild(inputEmail);
   var inputPassword = document.createElement('input');
+  inputPassword.style.borderRadius = '3px';
   inputPassword.setAttribute('type','password');
+  inputPassword.setAttribute('placeholder','Password');
   inputEmail.setAttribute('name','email');
-  var emailLabel = document.createElement('label');
-  emailLabel.setAttribute('id','email-field');
-  emailLabel.innerText = 'E-mail: ';
-  emailLabel.setAttribute('for','email');
-  form.appendChild(emailLabel);
   form.appendChild(inputEmail);
-  var inputPassword = document.createElement('input');
-  inputPassword.setAttribute('type','password');
-  inputPassword.setAttribute('name','password');
-  var passwordLabel = document.createElement('label');
-  passwordLabel.setAttribute('id','pass-field');
-  passwordLabel.innerText = 'Password: ';
-  passwordLabel.setAttribute('for','password');
-  form.appendChild(passwordLabel);
   form.appendChild(inputPassword);
   var submitButton = document.createElement('button');
-  submitButton.setAttribute('id','submitButton');
+  submitButton.setAttribute('id','res-submit-button');
   submitButton.setAttribute('type','submit');
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
-  submitButton.addEventListener('submit',function(e) {
-    e.preventDefault();
+  submitButton.addEventListener('click',function(event) {
+    event.preventDefault();
+    alert('testing bro');
   });
 });
+
+mmButton.addEventListener('click', function(event) {
+  event.preventDefault();
+  mmButton.remove();
+  var form = document.createElement('form');
+  form.setAttribute('id','mm-form');
+  mmButtonCont.appendChild(form);
+  var inputID = document.createElement('input');
+  inputID.style.borderRadius = '3px';
+  inputID.setAttribute('type','password');
+  inputID.setAttribute('id','input-id');
+  inputID.setAttribute('placeholder','Carrier ID');
+  form.appendChild(inputID);
+  var submitButton = document.createElement('button');
+  submitButton.setAttribute('id','mm-submit-button');
+  submitButton.setAttribute('type','submit');
+  submitButton.innerText = 'Submit';
+  form.appendChild(submitButton);
+  var testing = document.getElementById('mm-submit-button');
+  testing.addEventListener('click',function(event) {
+    event.preventDefault();
+    alert('testing the letter carrier alert');
+  });
+})
