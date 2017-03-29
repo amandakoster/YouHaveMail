@@ -13,7 +13,7 @@ main{
   width: 100%;
   background-color: #D8D8D8;
   padding: 3% 0%;
-  height: 35vw;
+  height: 42vw;
 }
 
 #header {
@@ -33,6 +33,10 @@ main{
   color: #fff;
   font-size: 1.25vw;
 }
+#register-link:hover {
+  color: #E71921;
+  cursor: pointer;
+}
 #logo-inner {
   font-size: 4.5vw;
   color: #fff;
@@ -42,6 +46,10 @@ main{
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+}
+#logo-inner:hover {
+  color: #E71921;
+  cursor: pointer;
 }
 .logo-div {
   display: block;
@@ -82,16 +90,23 @@ height: 100%;
   color: #fff;
   margin: 0% auto 3% auto;
   text-shadow: 0 7px 10px #000;
+  width: 100%;
 }
 .li-badges {
   display: inline-block;
   margin: auto;
   position: absolute;
   top: 25%;
+  border-radius: 10px;
   transform: translateY(-50%);
-  background-color: #999999;
-  /*border-radius: 10px;*/
   box-shadow: 0 3px 5px #000;
+  width: 20vw;
+  height: 14vw;
+}
+.li-badges img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
 .left-badge {
   left: 25%;
@@ -155,7 +170,7 @@ height: 12vw;
   background-color: #333366;
   padding: 4vw 7vw;
   width: 25vw;
-  height: 13vw;
+  height: 12vw;
   color: #FFFFFF !important;
   font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -163,6 +178,9 @@ height: 12vw;
   display: inline-block;
   margin-top: 15px;
   box-shadow: 0 3px 5px #000;
+}
+#res-button:hover {
+  cursor: pointer;
 }
 #mm-button-cont {
   height: 12vw;
@@ -174,7 +192,7 @@ height: 12vw;
   background-color: #333366;
   padding: 4vw 7vw;
   width: 25vw;
-  height: 13vw;
+  height: 12vw;
   color: #FFFFFF !important;
   font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -182,6 +200,9 @@ height: 12vw;
   display: inline-block;
   margin-top: 15px;
   box-shadow: 0 3px 5px #000;
+}
+#mm-button:hover {
+  cursor: pointer;
 }
 #res-submit-button {
   border: 1px solid #333366;
