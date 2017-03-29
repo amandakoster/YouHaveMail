@@ -25,14 +25,13 @@ main{
   position: relative;
   width: 100%;
   border: 1px solid #333366;
-  border-radius: 3px;
 }
 #register-link {
   position: absolute;
   top: 12%;
   right: 1%;
   color: #fff;
-  box-shadow: 0 3px 5px #000;
+  font-size: 1.25vw;
 }
 #logo-inner {
   font-size: 4.5vw;
@@ -73,7 +72,6 @@ height: 100%;
 }
 #footer {
   height: 20vw;
-  outline: 1px solid red;
   position: relative;
   background-color: #333366;;
 }
@@ -92,7 +90,7 @@ height: 100%;
   top: 25%;
   transform: translateY(-50%);
   background-color: #999999;
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   box-shadow: 0 3px 5px #000;
 }
 .left-badge {
@@ -156,8 +154,10 @@ height: 12vw;
   border: 1px solid #333366;
   background-color: #333366;
   padding: 4vw 7vw;
+  width: 25vw;
+  height: 13vw;
   color: #FFFFFF !important;
-  font-size: 14px;
+  font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
@@ -173,8 +173,10 @@ height: 12vw;
   border: 1px solid #333366;
   background-color: #333366;
   padding: 4vw 7vw;
+  width: 25vw;
+  height: 13vw;
   color: #FFFFFF !important;
-  font-size: 14px;
+  font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
