@@ -134,8 +134,8 @@ section {
   width:99px;
 }
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 .numberGrid{
   text-align: center;
@@ -150,7 +150,7 @@ section {
   background-color: white;  
   border-radius:15px;
   border:5px solid;
-  height:103px;
+  min-heightheight:103px;
   margin-top: 15px;
   width:390px;
 }
