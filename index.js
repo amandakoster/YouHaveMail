@@ -32,10 +32,10 @@ resButton.addEventListener('click', function(event){
   submitButton.addEventListener('click',function(event) {
     event.preventDefault();
     if (inputEmail.value === 'mdm_8@hotmail.com' && inputPassword.value === '123') {
-      window.location.replace('registration.html');
-    } else {
-      alert('The Username or Password do not match. Please try again.');
+      alert('You have already registered with us.');
       window.location.reload();
+    } else {
+      window.location.replace('registration.html');
     }
   });
 });

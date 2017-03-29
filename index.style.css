@@ -140,14 +140,14 @@ section {
   margin: auto;
 }
 p {
-  line-height: 24px;
+  line-height: 2.5vw;
 }
 /*INDEX CSS*/
 #main-content {
   margin: auto;
   width: 60%;
   text-align: center;
-  height: 30vw;
+  height: 20vw;
   background-color:;
 }
 #main-content h1 {
@@ -156,13 +156,15 @@ p {
 }
 .about-product {
   font-size: 1.5vw;
+  height: 87%;
 }
 .main-buttons {
-height: 12vw;
+height: 15.2vw;
 }
 #res-button-cont {
   height: 12vw;
   float: left;
+  width: 50%;
 }
 #res-button {
   float: left;
@@ -176,7 +178,8 @@ height: 12vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 3vw;
+  margin-left: 14vw;
   box-shadow: 0 3px 5px #000;
 }
 #res-button:hover {
@@ -185,6 +188,7 @@ height: 12vw;
 #mm-button-cont {
   height: 12vw;
   float: right;
+  width: 50%;
 }
 #mm-button {
   float: right;
@@ -198,7 +202,8 @@ height: 12vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 3vw;
+  margin-right: 14vw;
   box-shadow: 0 3px 5px #000;
 }
 #mm-button:hover {
