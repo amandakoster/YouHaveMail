@@ -13,6 +13,7 @@ resButton.addEventListener('click', function(event){
   form.setAttribute('id','res-form');
   resButtonCont.appendChild(form);
   var inputEmail = document.createElement('input');
+  inputEmail.setAttribute('autofocus','true');
   inputEmail.style.borderRadius = '3px';
   inputEmail.setAttribute('type', 'email');
   inputEmail.setAttribute('placeholder','E-mail');
@@ -32,10 +33,10 @@ resButton.addEventListener('click', function(event){
   submitButton.addEventListener('click',function(event) {
     event.preventDefault();
     if (inputEmail.value === 'mdm_8@hotmail.com' && inputPassword.value === '123') {
-      window.location.replace('registration.html');
-    } else {
-      alert('The Username or Password do not match. Please try again.');
+      alert('You have already registered with us.');
       window.location.reload();
+    } else {
+      window.location.replace('registration.html');
     }
   });
 });
@@ -47,6 +48,7 @@ mmButton.addEventListener('click', function(event) {
   form.setAttribute('id','mm-form');
   mmButtonCont.appendChild(form);
   var inputID = document.createElement('input');
+  inputID.setAttribute('autofocus','true');
   inputID.style.borderRadius = '3px';
   inputID.setAttribute('type','password');
   inputID.setAttribute('id','input-id');

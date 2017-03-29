@@ -1,7 +1,7 @@
 'use strict';
 
 var newUserArray = [];
-var clickButton = document.getElementById('submitButton').addEventListener('click', storedUser);
+var test = document.getElementById('submitButton').addEventListener('click', storedUser);
 
 function storedUser(event) {
   event.preventDefault();

@@ -116,9 +116,8 @@ section {
   margin: auto;
 }
 .sent-gif{
-  opacity: .6;
   position: absolute;
-  top: -101px;
+  top: -100px;
   left: -154px;
   -webkit-animation: fadein 2s;
 }
@@ -131,8 +130,8 @@ section {
   overflow: hidden;
   float:right;
   margin: auto;
-  height:90px;
-  width:100px;
+  height:99px;
+  width:99px;
 }
 @-webkit-keyframes fadein {
     from { opacity: 0; }
@@ -142,19 +141,16 @@ section {
   text-align: center;
 }
 .gridNumber{
-  float:left;
-  margin-left:55px;
-  margin-top:85px;
   text-align:center;
-
 }
 .messageSentText{
   text-align: center;
 }
 .listContainer {
-  border-radius:25px;
+  background-color: white;  
+  border-radius:15px;
   border:5px solid;
-  height:100px;
+  height:103px;
   margin-top: 15px;
   width:390px;
 }
