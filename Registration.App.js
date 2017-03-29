@@ -7,6 +7,9 @@ var form = document.getElementById('form').addEventListener('submit', function(e
   var lsMailAddress = document.getElementById('mailAddress').value;
   var lsEmailAddress = document.getElementById('emailAddress').value;
   var user = new NewUser(lsName,lsUserName, lsMailAddress, lsEmailAddress, false, false);
+  var test = JSON.stringify(users);
+  debugger;
+  localStorage.setItem('newUserArray', test);
 });
 var users = [];
 
@@ -16,9 +19,18 @@ function NewUser(fullName,userName, mailAddress, emailAddress,cboxSms,cboxEmail)
   this.mailAddress = mailAddress;
   this.emailAddress = emailAddress;
   this.cboxSms = cboxSms;
-  this.cboxEmail = cboxEmail,
+  this.cboxEmail = cboxEmail;
   users.push(this);
 };
+console.log(users, 'users');
+
+// var newUserArray = users;
+
+console.log(localStorage.newUserArray, 'newUserArray');
+
+// if (localStorage.newUserArray) {
+// var persistedUsers = JSON.parse(localStorage.newUserArray);
+// } if array is not in localStorage already
 
 // set variable fo rbollian value, have htat value set to local storage.
 
