@@ -13,6 +13,7 @@ resButton.addEventListener('click', function(event){
   form.setAttribute('id','res-form');
   resButtonCont.appendChild(form);
   var inputEmail = document.createElement('input');
+  inputEmail.setAttribute('autofocus','true');
   inputEmail.style.borderRadius = '3px';
   inputEmail.setAttribute('type', 'email');
   inputEmail.setAttribute('placeholder','E-mail');
@@ -47,6 +48,7 @@ mmButton.addEventListener('click', function(event) {
   form.setAttribute('id','mm-form');
   mmButtonCont.appendChild(form);
   var inputID = document.createElement('input');
+  inputID.setAttribute('autofocus','true');
   inputID.style.borderRadius = '3px';
   inputID.setAttribute('type','password');
   inputID.setAttribute('id','input-id');

@@ -188,7 +188,7 @@ height: 15.2vw;
 #mm-button-cont {
   height: 12vw;
   float: right;
-  width: 50%;
+  width: 41.2%;
 }
 #mm-button {
   float: right;
@@ -230,7 +230,7 @@ height: 15.2vw;
   border-radius: 3px;
   display: inline-block;
   box-shadow: 0 3px 5px #000;
-  float: right;
+  float: left;
 }
 #res-form {
   text-align: left;
@@ -238,11 +238,15 @@ height: 15.2vw;
   float: left;
   height: 10vw;
   width: 31%;
+  margin-top: 3vw;
+  margin-left: 14vw;
 }
 #mm-form {
   text-align: left;
   display: block;
-  float: right;
+  float: left;
   height: 10vw;
   width: 31%;
+  margin-top: 3vw;
+  margin-right: 14vw;
 }
