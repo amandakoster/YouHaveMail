@@ -4,6 +4,7 @@ var resButton = document.getElementById('res-button');
 var mmButton = document.getElementById('mm-button');
 var resButtonCont = document.getElementById('res-button-cont');
 var mmButtonCont = document.getElementById('mm-button-cont');
+// var ls = JSON.parse(localStorage.userArray);
 
 resButton.addEventListener('click', function(event){
   event.preventDefault();
@@ -30,7 +31,12 @@ resButton.addEventListener('click', function(event){
   form.appendChild(submitButton);
   submitButton.addEventListener('click',function(event) {
     event.preventDefault();
-    alert('testing bro');
+    if (inputEmail.value === 'mdm_8@hotmail.com' && inputPassword.value === '123') {
+      window.location.replace('registration.html');
+    } else {
+      alert('The Username or Password do not match. Please try again.');
+      window.location.reload();
+    }
   });
 });
 
@@ -54,6 +60,11 @@ mmButton.addEventListener('click', function(event) {
   var testing = document.getElementById('mm-submit-button');
   testing.addEventListener('click',function(event) {
     event.preventDefault();
-    alert('testing the letter carrier alert');
+    if (inputID.value === '12345') {
+      window.location.replace('map.html');
+    } else {
+      alert('The ID provided does not match any entry in our database. Please try again.');
+      window.location.reload();
+    }
   });
-})
+});

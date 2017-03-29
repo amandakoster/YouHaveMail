@@ -13,6 +13,7 @@ main{
   width: 100%;
   background-color: #D8D8D8;
   padding: 3% 0%;
+  height: 35vw;
 }
 
 #header {
@@ -88,20 +89,23 @@ height: 100%;
   display: inline-block;
   margin: auto;
   position: absolute;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
   background-color: #999999;
   border-radius: 10px;
   box-shadow: 0 3px 5px #000;
 }
 .left-badge {
-  left: 5%;
+  left: 25%;
+  transform: translateX(-50%);
 }
 .center-badge {
-  left:37.5%;
+  left:50%;
+  transform: translateX(-50%);
 }
 .right-badge {
-  right: 5%;
+  left: 75%;
+  transform: translateX(-50%);
 }
 
 a:link {
@@ -122,37 +126,35 @@ a:active {
 section {
   margin: auto;
 }
+p {
+  line-height: 24px;
+}
 /*INDEX CSS*/
 #main-content {
   margin: auto;
   width: 60%;
   text-align: center;
-  height: 42vw;
+  height: 30vw;
   background-color:;
-  outline: 1px solid red;
 }
-.welcome {
-
-}
-.welcome h1 {
+#main-content h1 {
   margin: 0% auto 3% auto;
 }
-.about-products{
-
-}
-.about-us {
-
+.about-product {
+  font-size: 1.5vw;
 }
 .main-buttons {
-
+height: 12vw;
 }
 #res-button-cont {
+  height: 12vw;
+  float: left;
 }
 #res-button {
   float: left;
   border: 1px solid #333366;
   background-color: #333366;
-  padding: 10px 20px;
+  padding: 4vw 7vw;
   color: #FFFFFF !important;
   font-size: 14px;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -162,13 +164,14 @@ section {
   box-shadow: 0 3px 5px #000;
 }
 #mm-button-cont {
-
+  height: 12vw;
+  float: right;
 }
 #mm-button {
   float: right;
   border: 1px solid #333366;
   background-color: #333366;
-  padding: 10px 20px;
+  padding: 4vw 7vw;
   color: #FFFFFF !important;
   font-size: 14px;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
