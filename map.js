@@ -84,6 +84,7 @@ function createList() {
     var markers = document.createElement('li');
     markers.appendChild(document.createTextNode(placedMarkerArray[i]));
     list.appendChild(markers);
+    document.getElementById('markerSubmitButton').removeEventListener('click', createList);
 
   }
   return list;
