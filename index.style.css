@@ -34,7 +34,8 @@ main{
   font-size: 1.25vw;
 }
 #register-link:hover {
-  color: #E71921;
+  color: rgba(231, 25, 33, 0.9);
+  transform: scale(.98,.98);
   cursor: pointer;
 }
 #logo-inner {
@@ -48,7 +49,7 @@ main{
   position: absolute;
 }
 #logo-inner:hover {
-  color: #E71921;
+  color: rgba(231, 25, 33, 0.9);
   cursor: pointer;
 }
 .logo-div {
@@ -76,7 +77,8 @@ height: 100%;
   color: #fff;
 }
 #logo-text:hover {
-  color: #E71921;
+  color: rgba(231, 25, 33, 0.9);
+  cursor: pointer;
 }
 #footer {
   height: 20vw;
@@ -165,6 +167,9 @@ height: 15.2vw;
   float: left;
   width: 50%;
 }
+#res-button-div {
+  display: inherit;
+}
 #res-button {
   float: left;
   border: 1px solid #333366;
@@ -179,9 +184,12 @@ height: 15.2vw;
   display: inline-block;
   margin-top: 3vw;
   margin-left: 14vw;
+  display: inherit;
 }
 #res-button:hover {
   cursor: pointer;
+  background-color: rgba(51, 51, 102, 0.9);
+  transform: scale(.98,.98);
 }
 #mm-button-cont {
   height: 12vw;
@@ -205,6 +213,8 @@ height: 15.2vw;
 }
 #mm-button:hover {
   cursor: pointer;
+  background-color: rgba(51, 51, 102, 0.9);
+  transform: scale(.98,.98);
 }
 #res-submit-button {
   border: 1px solid #333366;
