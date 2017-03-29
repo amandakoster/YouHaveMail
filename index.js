@@ -56,4 +56,4 @@ mmButton.addEventListener('click', function(event) {
     event.preventDefault();
     alert('testing the letter carrier alert');
   });
-})
+});

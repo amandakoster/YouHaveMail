@@ -13,6 +13,7 @@ main{
   width: 100%;
   background-color: #D8D8D8;
   padding: 3% 0%;
+  height: 35vw;
 }
 
 #header {
@@ -125,30 +126,29 @@ a:active {
 section {
   margin: auto;
 }
+p {
+  line-height: 24px;
+}
 /*INDEX CSS*/
 #main-content {
   margin: auto;
   width: 60%;
   text-align: center;
-  height: 26vw;
+  height: 30vw;
   background-color:;
 }
-.welcome {
-
-}
-.welcome h1 {
+#main-content h1 {
   margin: 0% auto 3% auto;
 }
-.about-products{
-
-}
-.about-us {
-
+.about-product {
+  font-size: 1.5vw;
 }
 .main-buttons {
-
+height: 12vw;
 }
 #res-button-cont {
+  height: 12vw;
+  float: left;
 }
 #res-button {
   float: left;
@@ -164,7 +164,8 @@ section {
   box-shadow: 0 3px 5px #000;
 }
 #mm-button-cont {
-
+  height: 12vw;
+  float: right;
 }
 #mm-button {
   float: right;
