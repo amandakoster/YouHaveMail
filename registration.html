@@ -25,20 +25,20 @@
 	<p>Please note, your personal information will not be shared with your mail courior.</p>
 	<form id="form" name="form">
 		<fieldset>
-			<div>Name: <input id="fullName" type="text"></div>
-			<div>User Name: <input id="userName" type="text"></div>
-			<div>Mailing address: <input id="mailAddress" type="text"></div>
-			<div>Email address: <input id="emailAddress" type="text"></div>
+			<div>Name: <input id="fullName" type="text" required></div>
+			<div>User Name: <input id="userName" type="text" required></div>
+			<div>Mailing address: <input id="mailAddress" type="text"  required></div>
+			<div>Email address: <input id="emailAddress" type="text" required></div>
 			<div>Great! Now, choose how would like to be notified once your mail is delivered:</div>
 
-			<div><input id ='cboxSms' for="sms" type="checkbox">SMS /text notification <input id="sms" type="number"></div>
+			<div><input id="cboxSms" for="sms" type="checkbox">SMS /text notification <input id="sms" type="number"></div>
 
-			<div><input id='cboxEmail'for="mailAddress" type="checkbox">Email notification</div>
+			<div><input id="cboxEmail" for="mailAddress" type="checkbox" >Email notification</div>
 
 			<div><button id="submitButton" type="submit">Submit</button></div>
 		</fieldset>
 	</form>
-	<footer id="footer">
+	<!-- <footer id="footer">
 		<h3>About Our Team</h3>
 		<div class="li-badges left-badge">
 			<div class="LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="horizontal" data-vanity="jt-salamon-12237b82" data-version="v1">
@@ -55,7 +55,7 @@
 				<a class="LI-simple-link" href='https://www.linkedin.com/in/michael-miller-b1a5967a?trk=profile-badge'>Michael Miller</a>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 	<script src="Registration.App.js">
 	</script>
 </body>
