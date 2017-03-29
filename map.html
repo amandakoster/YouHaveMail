@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>You Have Mail</title>
-	<link rel="stylesheet" href="mapStyle.css">
+	<link rel="stylesheet" href="styleguide.css">
 </head>
 	<body>
-		<header>
-			<div class="logo-div"><a id="logo-img" href="index.html"><img src="img/favicon-envelope.ico" class="fa" aria-hidden="true" /><h2 id="logo-text">You Have Mail!</h2></a></div>
+		<header id="header">
+			<div class="logo-div"><a id="logo-img" href="index.html"><img src="img/favicon-envelope.ico" class="fa" aria-hidden="true" /><p id="logo-text">You Have Mail!</p></a></div>
 		</header>
 
 		<main>
@@ -17,21 +17,21 @@
 			<div id="map" class="map"></div>
 			<div class="markerInputBox">
 				<input type="number" id="markerInput" />
-				<button type="submit" id="markerSubmitButton"> Enter Grid id</button>
+				<button type="submit" id="markerSubmitButton" class="mm-button"> Enter Grid id</button>
 			</div>
 			<div>
 				<p class="messageSentText">A message has been sent to the following location markers:</p>
 			</div>
 			<section class="listContainer">
-				<div class="messageSent" id="messageSent"></div>
+				<a href="map.html"><div class="messageSent" id="messageSent"></div></a>
 				<div class="ul" id="ul"></div>
 			</section>
+			<div class="logOut">
+				<button type="submit" class="mm-button" ><a href="index.html"> Log Out</a></button>
+			</div>
 		</main>
 
-		<footer>
-			<div class="logOut">
-				<button type="submit" class="logOutButton"><a href="index.html"> Log Out</a></button>
-			</div>
+		<footer id="footer">
 		</footer>
 		<script src="map.js"></script>
 		<script async defer
