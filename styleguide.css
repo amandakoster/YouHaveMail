@@ -1,7 +1,3 @@
-/*GLOBAL CSS*/
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: auto;
@@ -33,27 +29,26 @@ main{
   box-shadow: 0 3px 5px #000;
 }
 #logo-inner {
-  font-size: 4.5vw;
   color: #fff;
+  font-size: 4.5vw;
 }
 .fa {
   left: 2%;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  position: absolute;
 }
 .logo-div {
   display: block;
   height: 100%;
   position: absolute;
   width: 25%;
-
 }
 #logo-img {
-position: absolute;
 display: block;
-width: 100%;
 height: 100%;
+position: absolute;
+width: 100%;
 }
 #logo-text {
   display: block;
@@ -272,8 +267,7 @@ div.title_header {
 #mm-button-cont {
 
 }
-#mm-button {
-  float: right;
+.mm-button {
   border: 1px solid #333366;
   background-color: #333366;
   padding: 10px 20px;
