@@ -1,0 +1,216 @@
+/*GLOBAL CSS*/
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+main{
+  width: 100%;
+  background-color: #D8D8D8;
+  padding: 3% 0%;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  height: 5.5vw;
+  background-color: #333366;
+  height: 6vw;
+  position: relative;
+  width: 100%;
+  border: 1px solid #333366;
+  border-radius: 3px;
+}
+#register-link {
+  position: absolute;
+  top: 12%;
+  right: 1%;
+  color: #fff;
+  box-shadow: 0 3px 5px #000;
+}
+#logo-inner {
+  font-size: 4.5vw;
+  color: #fff;
+}
+.fa {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.logo-div {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 25%;
+
+}
+#logo-img {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+}
+#logo-text {
+  display: block;
+  position: absolute;
+  left:23%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vw;
+  color: #fff;
+}
+#logo-text:hover {
+  color: #E71921;
+}
+#footer {
+  height: 20vw;
+  outline: 1px solid red;
+  position: relative;
+  background-color: #333366;;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  margin: 0% auto 3% auto;
+  text-shadow: 0 7px 10px #000;
+}
+.li-badges {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #999999;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #000;
+}
+.left-badge {
+  left: 5%;
+}
+.center-badge {
+  left:37.5%;
+}
+.right-badge {
+  right: 5%;
+}
+
+a:link {
+	color: #333366;
+}
+
+a:visited {
+	color: #333366;
+}
+
+a:hover {
+	color: #E71921;
+}
+
+a:active {
+	color: #333366
+}
+section {
+  margin: auto;
+}
+/*INDEX CSS*/
+#main-content {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  height: 42vw;
+  background-color:;
+  outline: 1px solid red;
+}
+.welcome {
+
+}
+.welcome h1 {
+  margin: 0% auto 3% auto;
+}
+.about-products{
+
+}
+.about-us {
+
+}
+.main-buttons {
+
+}
+#res-button-cont {
+}
+#res-button {
+  float: left;
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 10px 20px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 15px;
+  box-shadow: 0 3px 5px #000;
+}
+#mm-button-cont {
+
+}
+#mm-button {
+  float: right;
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 10px 20px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 15px;
+  box-shadow: 0 3px 5px #000;
+}
+#res-submit-button {
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 5px 10px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: 0 3px 5px #000;
+}
+#mm-submit-button {
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 5px 10px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: 0 3px 5px #000;
+  float: right;
+}
+#res-form {
+  text-align: left;
+  display: block;
+  float: left;
+  height: 10vw;
+  width: 31%;
+}
+#mm-form {
+  text-align: left;
+  display: block;
+  float: right;
+  height: 10vw;
+  width: 31%;
+}
