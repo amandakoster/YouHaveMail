@@ -34,7 +34,8 @@ resButton.addEventListener('click', function(event){
     event.preventDefault();
     if (inputEmail.value === 'mdm_8@hotmail.com' && inputPassword.value === '123') {
       alert('You have already registered with us.');
-      window.location.reload();
+      inputEmail.reset();
+      inputPassword.reset();
     } else {
       window.location.replace('registration.html');
     }
