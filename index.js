@@ -34,9 +34,11 @@ resButton.addEventListener('click', function(event){
     event.preventDefault();
     if (inputEmail.value === 'mdm_8@hotmail.com' && inputPassword.value === '123') {
       alert('You have already registered with us.');
-      inputEmail.reset();
-      inputPassword.reset();
+      form.reset();
+      form.remove();
+      resButtonCont.appendChild(resButton);
     } else {
+      alert('You have not registered with us. We are redirecting you to our registration page.');
       window.location.replace('registration.html');
     }
   });
@@ -67,7 +69,7 @@ mmButton.addEventListener('click', function(event) {
       window.location.replace('map.html');
     } else {
       alert('The ID provided does not match any entry in our database. Please try again.');
-      window.location.reload();
+      form.reset();
     }
   });
 });
