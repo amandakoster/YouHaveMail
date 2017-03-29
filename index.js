@@ -27,14 +27,14 @@ resButton.addEventListener('click', function(event){
   inputEmail.setAttribute('type', 'email');
   inputEmail.setAttribute('placeholder','E-mail');
   form.appendChild(inputEmail);
-  var inputPassword = document.createElement('input');
+  /*var inputPassword = document.createElement('input');
   inputPassword.setAttribute('id','input-password');
   inputPassword.style.borderRadius = '3px';
   inputPassword.setAttribute('type','password');
-  inputPassword.setAttribute('placeholder','Password');
+  inputPassword.setAttribute('placeholder','Password');*/
   inputEmail.setAttribute('name','email');
   form.appendChild(inputEmail);
-  form.appendChild(inputPassword);
+  // form.appendChild(inputPassword);
   var submitButton = document.createElement('button');
   submitButton.setAttribute('id','res-submit-button');
   submitButton.setAttribute('type','submit');
@@ -42,7 +42,7 @@ resButton.addEventListener('click', function(event){
   form.appendChild(submitButton);
   submitButton.addEventListener('click',function(event) {
     event.preventDefault();
-    if (inputEmail.value === 'test@admin.com' && inputPassword.value === 'password') {
+    if (inputEmail.value === 'test@admin.com' /*&& inputPassword.value === 'password'*/) {
       alert('You have already registered with us.');
       form.reset();
       form.remove();
