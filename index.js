@@ -13,11 +13,6 @@ resButton.addEventListener('click', function(event){
 
 mmButton.addEventListener('click', function(event) {
   event.preventDefault();
-  while (resButtonDiv.style.display === 'none') {
-    var rmForm2 = document.getElementById('res-form');
-    rmForm2.remove();
-    resButtonDiv.style.display = 'inline-block';
-  }
   mmButtonDiv.style.display = 'none';
   var form = document.createElement('form');
   form.setAttribute('id','mm-form');
@@ -35,6 +30,15 @@ mmButton.addEventListener('click', function(event) {
   submitButton.setAttribute('type','submit');
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
+  var mmForm = document.getElementById('mm-form');
+  // document.addEventListener('click', function(event){
+  //   if (mmForm) {
+  //     // debugger;
+  //     mmForm.remove();
+  //     mmButtonDiv.style.display = 'block';
+  //     // mmButtonDiv.setAttribute('id','mm-form');
+  //   }
+  // });
   var testing = document.getElementById('mm-submit-button');
   testing.addEventListener('click',function(event) {
     event.preventDefault();
