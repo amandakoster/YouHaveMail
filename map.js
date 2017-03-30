@@ -58,7 +58,7 @@ function initMap() {
    	position: gas76,
    	map:map,
     });
-  placedMarkerArray.push(marker.position, markerBank.position, markerKiro.position, markerGas76.position, markerPSC.position);
+  placedMarkerArray.push(marker.name, markerBank.name, markerKiro.name, markerGas76.name, markerPSC.name);
   google.maps.event.addListener(map, 'click', function(event) {
     placeMarker(event.latLng);
   });
@@ -68,7 +68,7 @@ function initMap() {
       position: location,
       map: map
     });
-    placedMarkerArray.push(marker.position);
+    placedMarkerArray.push(marker.name);
   }
 
   function newRegisteredUser(){
