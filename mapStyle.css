@@ -103,11 +103,11 @@ h1 {
   font-family: 'Merriweather', serif;
 }
 p {
-	font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 hr {
-	width: 75%;
-	color: #E71921;
-	border: 1px;
-	border: thin dashed;
+  width: 75%;
+  color: #E71921;
+  border: 1px;
+  border: thin dashed;
 }
