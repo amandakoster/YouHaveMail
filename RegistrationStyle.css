@@ -18,6 +18,17 @@ fieldset {
   margin-left: 1vw;
 }
 
+form{
+  margin-top:60px;
+  margin-bottom: 150px;
+}
+
+#submitButton {
+  background-color: #333366;
+  border: none;
+  color: white;
+}
+
 li, span {
 	font-size: 14px;
 	display: block;
