@@ -23,16 +23,13 @@ function NewUser(fullName, userName, mailAddress, emailAddress, smsCbox, cboxEma
   this.cboxEmail = cboxEmail;
   users.push(this);
 };
+
 var smsInput = document.getElementById('sms-input');
 var smsCbox = document.getElementById('sms-cbox');
 addEventListener('click', function() {
   if (!smsCbox.checked === true) {
     smsInput.setAttribute('class', 'hidden');
   } else {
-    // console.log(smsInput, 'smsInput');
     smsInput.removeAttribute('class', 'hidden');
   }
 });
-
-console.log(users, 'users');
-console.log(localStorage.newUserArray, 'newUserArray');

@@ -21,22 +21,24 @@
 	</header>
 	<main>
 	<h2>Welcome! To sign up, please enter your information in the form below.</h2>
-	<p>Note, your personal information will not be shared with your mail courier.</p>
+	<p>Note, your personal information will not be shared with your mail carrier.</p>
+	<div class="container">
 	<form id="form" name="form">
 		<fieldset>
-			<div>Name: <input id="fullName" type="text" required></div>
-			<div>User Name: <input id="userName" type="text" required></div>
-			<div>Mailing address: <input id="mailAddress" type="text"  required></div>
-			<div>Email address: <input id="emailAddress" type="text" required></div>
-			<div>Great! Now, choose how would like to be notified once your mail is delivered:</div>
+			<div>Name: <input id="fullName" class="input" type="text" required></div>
+			<div>User Name: <input id="userName" class="input" type="text" required></div>
+			<div>Mailing address: <input id="mailAddress" class="input" type="text"  required></div>
+			<div>Email address: <input id="emailAddress" class="input" type="text" required></div>
+			<div id="great">Great! Now, choose how would like to be notified once your mail is delivered:</div>
 
-			<div><input id="sms-cbox" for="sms" type="checkbox" >SMS /text notification <input id="sms-input" type="number" class="hidden"></div>
+			<div><input id="sms-cbox" for="sms" type="checkbox">SMS/text notification <input id="sms-input" type="number" class="hidden"></div>
 
-			<div><input id="cboxEmail" for="mailAddress" type="checkbox" >Email notification</div>
+			<div><input id="cboxEmail" for="mailAddress" type="checkbox">Email notification</div>
 
-			<div><button id="submitButton" type="submit">Submit</button></div>
+			<div><button id="submitButton" class="input" type="submit">Submit</button></div>
 		</fieldset>
 	</form>
+</div>
 	<footer id="footer">
 		<h3>Our Development Team</h3>
 		<a target="_blank" href="https://www.linkedin.com/in/james-salamonsen-12237b82/">
@@ -54,10 +56,7 @@
 				<img src="img/Michael LinkedIn Image.jpg" alt="Image of Michael's linked in badge.">
 			</div>
 		</a>
-		<span class="icon-linkedin"></span>
-	</main>
 	</footer>
-	<script src="Registration.App.js">
-	</script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
