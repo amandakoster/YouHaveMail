@@ -8,15 +8,12 @@ body {
   padding: 0;
   width: 100%;
 }
-<<<<<<< HEAD:globalCSS.css
-main 
-   width: 100%;
-   padding: 3% 0%;
-   height: 42vw;
+main{
+  width: 100%;
+  padding: 3% 0%;
+  height: 42vw;
 }
 
-=======
->>>>>>> dev:globalStyle.css
 #header {
   width: 100%;
   position: relative;
@@ -92,7 +89,6 @@ height: 100%;
   color: #fff;
   margin: 0% auto 3% auto;
   width: 100%;
-  padding: 1% 0 1% 0;
 }
 .li-badges {
   display: inline-block;

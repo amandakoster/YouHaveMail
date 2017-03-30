@@ -66,10 +66,10 @@ main {
   height: 42vw;
 }
 
-/*FOOTER*/
-/*.icon-linkedin:before {
+.icon-linkedin:before {
   content: "\eac9";
-}*/
+}
+
 
 /*STYLEGUIDE STUFF*/
 
