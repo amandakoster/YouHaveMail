@@ -11,8 +11,7 @@ resButton.addEventListener('click', function(event){
   window.location.replace('registration.html');
 });
 
-mmButton.addEventListener('click', function(event) {
-  event.preventDefault();
+mmButton.addEventListener('click', function() {
   mmButtonDiv.style.display = 'none';
   var form = document.createElement('form');
   form.setAttribute('id','mm-form');
@@ -31,14 +30,13 @@ mmButton.addEventListener('click', function(event) {
   submitButton.innerText = 'Submit';
   form.appendChild(submitButton);
   var mmForm = document.getElementById('mm-form');
-  // document.addEventListener('click', function(event){
-  //   if (mmForm) {
-  //     // debugger;
-  //     mmForm.remove();
-  //     mmButtonDiv.style.display = 'block';
-  //     // mmButtonDiv.setAttribute('id','mm-form');
-  //   }
-  // });
+  setTimeout(function(){
+    if (inputID.value === '') {
+      mmForm.remove();
+      mmButtonDiv.style.display = 'block';
+    }
+  },4000);
+  inputID.focus();
   var testing = document.getElementById('mm-submit-button');
   testing.addEventListener('click',function(event) {
     event.preventDefault();
