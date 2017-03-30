@@ -11,47 +11,48 @@ var mmButton = document.getElementById('mm-button');
 
 resButton.addEventListener('click', function(event){
   event.preventDefault();
-  while (mmButtonDiv.style.display === 'none') {
-    var rmForm1 = document.getElementById('mm-form');
-    rmForm1.remove();
-    mmButtonDiv.style.display = 'inline-block';
-  }
-  resButtonDiv.style.display = 'none';
-  var form = document.createElement('form');
-  form.setAttribute('id','res-form');
-  resButtonCont.appendChild(form);
-  var inputEmail = document.createElement('input');
-  inputEmail.setAttribute('id','input-email');
-  inputEmail.setAttribute('autofocus','true');
-  inputEmail.style.borderRadius = '3px';
-  inputEmail.setAttribute('type', 'email');
-  inputEmail.setAttribute('placeholder','E-mail');
-  form.appendChild(inputEmail);
-  /*var inputPassword = document.createElement('input');
-  inputPassword.setAttribute('id','input-password');
-  inputPassword.style.borderRadius = '3px';
-  inputPassword.setAttribute('type','password');
-  inputPassword.setAttribute('placeholder','Password');*/
-  inputEmail.setAttribute('name','email');
-  form.appendChild(inputEmail);
-  // form.appendChild(inputPassword);
-  var submitButton = document.createElement('button');
-  submitButton.setAttribute('id','res-submit-button');
-  submitButton.setAttribute('type','submit');
-  submitButton.innerText = 'Submit';
-  form.appendChild(submitButton);
-  submitButton.addEventListener('click',function(event) {
-    event.preventDefault();
-    if (inputEmail.value === 'test@admin.com' /*&& inputPassword.value === 'password'*/) {
-      alert('You have already registered with us.');
-      form.reset();
-      form.remove();
-      resButtonCont.appendChild(resButton);
-    } else {
-      alert('You have not registered with us. We are redirecting you to our registration page.');
-      window.location.replace('registration.html');
-    }
-  });
+  window.location.replace('registration.html');
+  // while (mmButtonDiv.style.display === 'none') {
+  //   var rmForm1 = document.getElementById('mm-form');
+  //   rmForm1.remove();
+  //   mmButtonDiv.style.display = 'inline-block';
+  // }
+  // resButtonDiv.style.display = 'none';
+  // var form = document.createElement('form');
+  // form.setAttribute('id','res-form');
+  // resButtonCont.appendChild(form);
+  // var inputEmail = document.createElement('input');
+  // inputEmail.setAttribute('id','input-email');
+  // inputEmail.setAttribute('autofocus','true');
+  // inputEmail.style.borderRadius = '3px';
+  // inputEmail.setAttribute('type', 'email');
+  // inputEmail.setAttribute('placeholder','E-mail');
+  // form.appendChild(inputEmail);
+  // /*var inputPassword = document.createElement('input');
+  // inputPassword.setAttribute('id','input-password');
+  // inputPassword.style.borderRadius = '3px';
+  // inputPassword.setAttribute('type','password');
+  // inputPassword.setAttribute('placeholder','Password');*/
+  // inputEmail.setAttribute('name','email');
+  // form.appendChild(inputEmail);
+  // // form.appendChild(inputPassword);
+  // var submitButton = document.createElement('button');
+  // submitButton.setAttribute('id','res-submit-button');
+  // submitButton.setAttribute('type','submit');
+  // submitButton.innerText = 'Submit';
+  // form.appendChild(submitButton);
+  // submitButton.addEventListener('click',function(event) {
+  //   event.preventDefault();
+  //   if (inputEmail.value === 'test@admin.com' /*&& inputPassword.value === 'password'*/) {
+  //     alert('You have already registered with us.');
+  //     form.reset();
+  //     form.remove();
+  //     resButtonCont.appendChild(resButton);
+  //   } else {
+  //     alert('You have not registered with us. We are redirecting you to our registration page.');
+  //     window.location.replace('registration.html');
+  //   }
+  // });
 });
 
 mmButton.addEventListener('click', function(event) {
