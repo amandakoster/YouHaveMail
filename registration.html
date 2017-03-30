@@ -19,7 +19,6 @@
 			<a id="logo-img" href="index.html"><i id="logo-inner" class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
 		</div>
 	</header>
-	<main>
 	<h2>Welcome! To sign up, please enter your information in the form below.</h2>
 	<p>Note, your personal information will not be shared with your mail carrier.</p>
 	<div class="container">
@@ -30,15 +29,16 @@
 			<div>Mailing address: <input id="mailAddress" class="input" type="text"  required></div>
 			<div>Email address: <input id="emailAddress" class="input" type="text" required></div>
 			<div id="great">Great! Now, choose how would like to be notified once your mail is delivered:</div>
-
-			<div><input id="sms-cbox" for="sms" type="checkbox">SMS/text notification <input id="sms-input" type="number" class="hidden"></div>
+</div>
+			<div class="checkbox">
+				<div><input id="sms-cbox" for="sms" type="checkbox">SMS/text notification <input id="sms-input" type="number" class="hidden"></div>
 
 			<div><input id="cboxEmail" for="mailAddress" type="checkbox">Email notification</div>
 
 			<div><button id="submitButton" class="input" type="submit">Submit</button></div>
+		</div>
 		</fieldset>
 	</form>
-</div>
 	<footer id="footer">
 		<h3>Our Development Team</h3>
 		<a target="_blank" href="https://www.linkedin.com/in/james-salamonsen-12237b82/">
@@ -57,6 +57,6 @@
 			</div>
 		</a>
 	</footer>
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="RegistrationApp.js"></script>
 </body>
 </html>
