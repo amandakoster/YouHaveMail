@@ -43,8 +43,16 @@ header {
   position: absolute;
   outline: 1px solid red;
   width: 25%;
-
 }
+
+input#sms-input.hidden {
+  display: none;
+}
+
+input#sms-input.visible {
+background-color: : red;
+}
+
 #logo-img {
 position: absolute;
 display: block;
