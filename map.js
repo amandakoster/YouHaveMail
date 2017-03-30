@@ -1,11 +1,8 @@
 'use strict';
-
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
 document.getElementById('markerSubmitButton').addEventListener('click', createList);
 document.getElementById('markerSubmitButton').addEventListener('click', messageSent);
-//I need to add an event listener when the page loads to place a marker for new registered user.
-
 function messageSent() {
   var messageSent = document.getElementById('messageSent');
   var img = document.createElement("img");
@@ -25,35 +22,35 @@ function initMap() {
     center: codeFellows
   });
   var marker = new google.maps.Marker({
-    name:'Code Fellows',
+    name:'C - Code Fellows',
   	label: 'C',
     position: codeFellows,
     map: map
   });
   var bank = {lat: 47.6175, lng: -122.3520};
   var markerBank = new google.maps.Marker({
-    name:'Banner Bank',
+    name:'E - Banner Bank',
    	label: 'E',
    	position: bank,
    	map:map
     });
   var kiro = {lat: 47.6193, lng: -122.3504};
   var markerKiro = new google.maps.Marker({
-    name:'Kiro 7',
+    name:'A - Kiro 7',
    	label: 'A',
    	position: kiro,
    	map:map,
     });
   var pSC = {lat: 47.6178, lng: -122.3514};
   var markerPSC = new google.maps.Marker({
-    name:'Pacific Science Center',
+    name:'D - Pacific Science Center',
    	label: 'D',
    	position: pSC,
    	map:map,
     });
   var gas76 = {lat: 47.6192, lng: -122.3517};
   var markerGas76 = new google.maps.Marker({
-    name:'76',
+    name:'B - 76',
    	label: 'B',
    	position: gas76,
    	map:map,
@@ -68,9 +65,8 @@ function initMap() {
       position: location,
       map: map
     });
-    placedMarkerArray.push(marker.name);
+    placedMarkerArray.push(marker.position);
   }
-
   function newRegisteredUser(){
     var newUserInfo = localStorage.newUserArray;
     var userArray = JSON.parse(newUserInfo);
@@ -79,13 +75,11 @@ function initMap() {
       var userStringSplit = userArray[i].mailAddress.split(' ');
       var userStringJoin = userStringSplit.join('+');
       var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + userStringJoin + '&key=AIzaSyAb3gmSEsoKXrUZBsqoY2a0_mNc4EvJfck';
-
       $.ajax({
         type: 'GET',
         url: url,
         dataType: 'json'
-      }).done(function(data){
-          console.log(data);  
+      }).done(function(data){ 
           var newMarkLocation = data.results[0].geometry.location;
           placeMarker(newMarkLocation);
       });      
@@ -100,7 +94,6 @@ function createList() {
     markers.appendChild(document.createTextNode(placedMarkerArray[i]));
     list.appendChild(markers);
     document.getElementById('markerSubmitButton').removeEventListener('click', createList);
-
   }
   return list;
 }
