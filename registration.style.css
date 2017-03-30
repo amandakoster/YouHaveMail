@@ -206,6 +206,7 @@ hr {
 
 fieldset {
 	border: none;
+  margin-left: 1vw;
 }
 
 li, span {
@@ -264,6 +265,11 @@ div.title_header {
   float: right;
 }
 
+
+/*FOOTER*/
+.icon-linkedin:before {
+  content: "\eac9";
+}
 
 /*STYLEGUIDE STUFF*/
 
