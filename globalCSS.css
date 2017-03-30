@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+main{
+  width: 100%;
+  padding: 3% 0%;
+  height: 42vw;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  height: 5.5vw;
+  background-color: #333366;
+  height: 6vw;
+  position: relative;
+  width: 100%;
+  border: 1px solid #333366;
+}
+#register-link {
+  position: absolute;
+  top: 12%;
+  right: 1%;
+  color: #fff;
+  font-size: 1.25vw;
+}
+#register-link:hover {
+  color: #EDEDED;
+  cursor: pointer;
+}
+#logo-inner {
+  font-size: 4.5vw;
+  color: #fff;
+}
+.fa {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+#logo-inner:hover {
+  color: #EDEDED;
+  cursor: pointer;
+}
+.logo-div {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 25%;
+
+}
+#logo-img {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+}
+#logo-text {
+  display: block;
+  position: absolute;
+  left:23%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vw;
+  color: #fff;
+}
+#logo-text:hover {
+  color: #EDEDED;
+  cursor: pointer;
+}
+#footer {
+  height: 20vw;
+  position: relative;
+  background-color: #333366;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  margin: 0% auto 3% auto;
+  text-shadow: 0 7px 10px #000;
+  width: 100%;
+}
+.li-badges {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  width: 20vw;
+  height: 14vw;
+}
+.li-badges img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.left-badge {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.center-badge {
+  left:50%;
+  transform: translateX(-50%);
+}
+.right-badge {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+a:link {
+	color: #333366;
+}
+
+a:visited {
+	color: #333366;
+}
+
+a:hover {
+	color: #E71921;
+}
+
+a:active {
+	color: #333366
+}
+section {
+  margin: auto;
+}
+p {
+  line-height: 2.5vw;
+}
+.sent-gif{
+  position: absolute;
+  top: -100px;
+  left: -154px;
+  -webkit-animation: fadein 2s;
+}
