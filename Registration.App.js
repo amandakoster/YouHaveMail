@@ -6,7 +6,9 @@ var form = document.getElementById('form').addEventListener('submit', function(e
   var lsUserName = document.getElementById('userName').value;
   var lsMailAddress = document.getElementById('mailAddress').value;
   var lsEmailAddress = document.getElementById('emailAddress').value;
-  var user = new NewUser(lsName, lsUserName, lsMailAddress, lsEmailAddress, false, false);
+  var lsSms = document.getElementById('sms-input').vaue;
+  var lsHidden = document.getElementsByClassName('hidden').value;
+  var user = new NewUser(lsName, lsUserName, lsMailAddress, lsEmailAddress, lsSms, false, false);
   var test = JSON.stringify(users);
   localStorage.setItem('newUserArray', test);
 });
@@ -27,7 +29,7 @@ addEventListener('click', function() {
   if (!smsCbox.checked === true) {
     smsInput.setAttribute('class', 'hidden');
   } else {
-    console.log(smsInput, 'smsInput');
+    // console.log(smsInput, 'smsInput');
     smsInput.removeAttribute('class', 'hidden');
   }
 });
