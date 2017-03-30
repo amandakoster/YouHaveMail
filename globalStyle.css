@@ -8,15 +8,6 @@ body {
   padding: 0;
   width: 100%;
 }
-<<<<<<< HEAD:globalCSS.css
-main 
-   width: 100%;
-   padding: 3% 0%;
-   height: 42vw;
-}
-
-=======
->>>>>>> dev:globalStyle.css
 #header {
   width: 100%;
   position: relative;
