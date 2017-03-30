@@ -236,6 +236,7 @@ height: 15.2vw;
   border-radius: 3px;
   display: inline-block;
   float: left;
+  margin-top: 5%;
 }
 #res-form {
   text-align: left;
