@@ -1,0 +1,270 @@
+/*GLOBAL CSS*/
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+main{
+  width: 100%;
+  background-color: #D8D8D8;
+  padding: 3% 0%;
+  height: 42vw;
+}
+
+#header {
+  width: 100%;
+  position: relative;
+  height: 5.5vw;
+  background-color: #333366;
+  height: 6vw;
+  position: relative;
+  width: 100%;
+  border: 1px solid #333366;
+}
+#register-link {
+  position: absolute;
+  top: 12%;
+  right: 1%;
+  color: #fff;
+  font-size: 1.25vw;
+}
+#register-link:hover {
+  color: rgba(231, 25, 33, 0.9);
+  transform: scale(.98,.98);
+  cursor: pointer;
+}
+#logo-inner {
+  font-size: 4.5vw;
+  color: #fff;
+}
+.fa {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+#logo-inner:hover {
+  color: rgba(231, 25, 33, 0.9);
+  cursor: pointer;
+}
+.logo-div {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 25%;
+
+}
+#logo-img {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+}
+#logo-text {
+  display: block;
+  position: absolute;
+  left:23%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  font-size: 2.5vw;
+  color: #fff;
+}
+#logo-text:hover {
+  color: rgba(231, 25, 33, 0.9);
+  cursor: pointer;
+}
+#footer {
+  height: 20vw;
+  position: relative;
+  background-color: #333366;
+}
+#footer h3 {
+  display: block;
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  margin: 0% auto 3% auto;
+  text-shadow: 0 7px 10px #000;
+  width: 100%;
+}
+.li-badges {
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  top: 25%;
+  border-radius: 10px;
+  transform: translateY(-50%);
+  width: 20vw;
+  height: 14vw;
+}
+.li-badges img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.left-badge {
+  left: 25%;
+  transform: translateX(-50%);
+}
+.center-badge {
+  left:50%;
+  transform: translateX(-50%);
+}
+.right-badge {
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+a:link {
+	color: #333366;
+}
+
+a:visited {
+	color: #333366;
+}
+
+a:hover {
+	color: #E71921;
+}
+
+a:active {
+	color: #333366
+}
+section {
+  margin: auto;
+}
+p {
+  line-height: 2.5vw;
+}
+/*INDEX CSS*/
+#main-content {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  height: 20vw;
+  background-color:;
+}
+#main-content h1 {
+  margin: 0% auto 3% auto;
+  font-size: 2vw;
+}
+.about-product {
+  font-size: 1.5vw;
+  height: 87%;
+}
+.main-buttons {
+height: 15.2vw;
+}
+#res-button-cont {
+  height: 12vw;
+  float: left;
+  width: 50%;
+}
+#res-button-div {
+  display: inherit;
+}
+#res-button {
+  float: left;
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 4vw 7vw;
+  width: 25vw;
+  height: 12vw;
+  color: #FFFFFF !important;
+  font-size: 2vw;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 3vw;
+  margin-left: 14vw;
+  display: inherit;
+}
+#res-button:hover {
+  cursor: pointer;
+  background-color: rgba(51, 51, 102, 0.9);
+  transform: scale(.98,.98);
+}
+#mm-button-cont {
+  height: 12vw;
+  float: right;
+  width: 41.2%;
+}
+#mm-button {
+  float: right;
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 4vw 7vw;
+  width: 25vw;
+  height: 12vw;
+  color: #FFFFFF !important;
+  font-size: 2vw;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 3vw;
+  margin-right: 14vw;
+}
+#mm-button:hover {
+  cursor: pointer;
+  background-color: rgba(51, 51, 102, 0.9);
+  transform: scale(.98,.98);
+}
+#res-submit-button {
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 5px 10px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+}
+#mm-submit-button {
+  border: 1px solid #333366;
+  background-color: #333366;
+  padding: 5px 10px;
+  color: #FFFFFF !important;
+  font-size: 14px;
+  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 3px;
+  display: inline-block;
+  float: left;
+}
+#res-form {
+  text-align: left;
+  display: block;
+  float: left;
+  height: 10vw;
+  width: 31%;
+  margin-top: 3vw;
+  margin-left: 14vw;
+}
+#mm-form {
+  text-align: left;
+  display: block;
+  float: left;
+  height: 10vw;
+  width: 31%;
+  margin-top: 3vw;
+  margin-right: 14vw;
+}
+#input-email {
+  width: 22vw;
+  height: 3vw;
+}
+#input-password {
+  width: 22vw;
+  height: 3vw;
+}
+#input-id {
+  width: 22vw;
+  height: 3vw;
+  margin-top: 3vw;
+}

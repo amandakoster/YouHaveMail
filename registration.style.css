@@ -1,4 +1,4 @@
-
+/*GLOBAL CSS*/
 body {
   margin: auto;
   padding: 0;
@@ -7,48 +7,49 @@ body {
 main{
   margin: auto;
   width: 100%;
-  background-color: #D8D8D8;
 }
 
 #header {
   width: 100%;
   position: relative;
   height: 5.5vw;
-  background-color: #333366;
+}
+
+header {
+  background-color: #D8D8D8;
   height: 6vw;
   position: relative;
   width: 100%;
-  border: 1px solid #333366;
-  border-radius: 3px;
 }
 #register-link {
   position: absolute;
   top: 12%;
   right: 1%;
-  color: #fff;
-  box-shadow: 0 3px 5px #000;
 }
 #logo-inner {
-  color: #fff;
   font-size: 4.5vw;
 }
 .fa {
   left: 2%;
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  position: absolute;
+  top: 10%;
+
 }
 .logo-div {
   display: block;
   height: 100%;
   position: absolute;
+  outline: 1px solid red;
   width: 25%;
+
 }
 #logo-img {
-display: block;
-height: 100%;
 position: absolute;
+display: block;
 width: 100%;
+height: 100%;
 }
 #logo-text {
   display: block;
@@ -59,7 +60,6 @@ width: 100%;
   padding: 0;
   margin: 0;
   font-size: 2.5vw;
-  color: #fff;
 }
 #logo-text:hover {
   color: #E71921;
@@ -68,24 +68,21 @@ width: 100%;
   height: 26vw;
   outline: 1px solid red;
   position: relative;
-  background-color: #333366;;
+  background-color: #f7f7f7;
 }
 #footer h3 {
   display: block;
   text-align: center;
   font-size: 3vw;
-  color: #fff;
-  margin: 0% auto 3% auto;
+  color: #333366;
 }
 .li-badges {
+  outline: 1px solid blue;
   display: inline-block;
   margin: auto;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #999999;
-  border-radius: 3px;
-  box-shadow: 0 3px 5px #000;
 }
 .left-badge {
   left: 5%;
@@ -117,42 +114,38 @@ section {
 }
 .sent-gif{
   position: absolute;
-  top: -100px;
+  top: -101px;
   left: -154px;
-  -webkit-animation: fadein 2s;
 }
 
 /*MAP CSS*/
 
 .messageSent{
-  border-radius:20px;
   position: relative;
   overflow: hidden;
   float:right;
   margin: auto;
-  height:99px;
-  width:99px;
-}
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  height:90px;
+  width:100px;
 }
 .numberGrid{
   text-align: center;
 }
 .gridNumber{
+  float:left;
+  margin-left:55px;
+  margin-top:85px;
   text-align:center;
 }
 .messageSentText{
+
   text-align: center;
 }
 .listContainer {
-  background-color: white;  
-  border-radius:15px;
   border:5px solid;
-  min-height:103px;
+  height:100px;
   margin-top: 15px;
-  width:390px;
+  width:500px;
 }
 .logOut {
   float:left;
@@ -166,14 +159,15 @@ section {
 div.map{
   width:390px;
   height:390px;
-  border-radius: 25px;
+  border-radius: 100px;
   margin:auto;
-  border:5px dashed black;
+  border:10px dashed black;
 }
 div.markerInputBox{
   margin:auto;
   text-align: center;
 }
+
 h1 {
   display: block;
   font-size: 2em;
@@ -181,9 +175,18 @@ h1 {
   color:  #333366;
   font-family: 'Merriweather', serif;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+	line-height: 24px;
+	line-height: 1;
+}
+
 p {
 	font-size: 14px;
 }
+
 hr {
 	width: 75%;
 	color: #E71921;
@@ -227,14 +230,9 @@ div.title_header {
   width: 60%;
   text-align: center;
   height: 42vw;
-  background-color:;
-  outline: 1px solid red;
 }
 .welcome {
 
-}
-.welcome h1 {
-  margin: 0% auto 3% auto;
 }
 .about-products{
 
@@ -246,38 +244,16 @@ div.title_header {
 
 }
 #res-button-cont {
+  width: 15%;
 }
 #res-button {
   float: left;
-  border: 1px solid #333366;
-  background-color: #333366;
-  padding: 10px 20px;
-  color: #FFFFFF !important;
-  font-size: 14px;
-  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-radius: 3px;
-  display: inline-block;
-  margin-top: 15px;
-  box-shadow: 0 3px 5px #000;
 }
 #mm-button-cont {
 
 }
-.mm-button {
-  border: 1px solid #333366;
-  background-color: #333366;
-  padding: 10px 20px;
-  color: #FFFFFF !important;
-  font-size: 14px;
-  font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-radius: 3px;
-  display: inline-block;
-  margin-top: 15px;
-  box-shadow: 0 3px 5px #000;
-}
-#form {
-  float:left;
-  text-align: left;
+#mm-button {
+  float: right;
 }
 
 

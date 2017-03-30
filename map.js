@@ -1,21 +1,15 @@
 'use strict';
+
 var placedMarkerArray = [];
 document.getElementById('markerSubmitButton').addEventListener('click', markerSubmit);
 document.getElementById('markerSubmitButton').addEventListener('click', createList);
 document.getElementById('markerSubmitButton').addEventListener('click', messageSent);
+//I need to add an event listener when the page loads to place a marker for new registered user.
 
-// document.getElementById('markerSubmitButton').addEventListener('click', error);
-//
-// function error() {
-//   var markerInput = document.getElementById('markerInput').value;
-//   while(markerInput !== '12'){
-//     alert('Please enter the right grid Id #');
-//     break;
-//   }
-// }
 function messageSent() {
   var messageSent = document.getElementById('messageSent');
   var img = document.createElement("img");
+  img.setAttribute('class', 'sent-gif');
   img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
   messageSent.appendChild(img);
 }
@@ -76,6 +70,28 @@ function initMap() {
     });
     placedMarkerArray.push(marker.position);
   }
+
+  function newRegisteredUser(){
+    var newUserInfo = localStorage.newUserArray;
+    var userArray = JSON.parse(newUserInfo);
+    for(var i =0; i < userArray.length; i++){
+      var userAddress = userArray[i].mailAddress;
+      var userStringSplit = userArray[i].mailAddress.split(' ');
+      var userStringJoin = userStringSplit.join('+');
+      var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + userStringJoin + '&key=AIzaSyAb3gmSEsoKXrUZBsqoY2a0_mNc4EvJfck';
+
+      $.ajax({
+        type: 'GET',
+        url: url,
+        dataType: 'json'
+      }).done(function(data){
+          console.log(data);  
+          var newMarkLocation = data.results[0].geometry.location;
+          placeMarker(newMarkLocation);
+      });      
+    }
+  }
+  newRegisteredUser();
 }
 function createList() {
   var list = document.getElementById('ul');
@@ -83,6 +99,7 @@ function createList() {
     var markers = document.createElement('li');
     markers.appendChild(document.createTextNode(placedMarkerArray[i]));
     list.appendChild(markers);
+    document.getElementById('markerSubmitButton').removeEventListener('click', createList);
 
   }
   return list;
