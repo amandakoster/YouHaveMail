@@ -138,9 +138,14 @@ section {
   to   { opacity: 1; }
 }
 .numberGrid{
+  width:100px;
   text-align: center;
 }
+.gridIdContainer{
+  display:inline;
+}
 .gridNumber{
+  width:25px;
   text-align:center;
 }
 .messageSentText{
@@ -152,6 +157,7 @@ section {
   border:5px solid;
   min-height:103px;
   margin-top: 15px;
+  padding-left:5px;
   width:390px;
 }
 .logOut {
