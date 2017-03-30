@@ -24,14 +24,6 @@ li, span {
 	line-height: 1.5;
 }
 
-.compliant {
-	background-color: #ffffff;
-	color: #595959;
-	border-width: 1pt;
-	border-color: #595959;
-	Text Gray #595959
-}
-
 div.title_header {
 	position: fixed;
 	padding: 10px 10px 10px 40px;
@@ -75,9 +67,9 @@ main {
 }
 
 /*FOOTER*/
-.icon-linkedin:before {
+/*.icon-linkedin:before {
   content: "\eac9";
-}
+}*/
 
 /*STYLEGUIDE STUFF*/
 
