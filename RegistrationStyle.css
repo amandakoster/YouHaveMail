@@ -1,4 +1,11 @@
 /*REGISTRATION CSS*/
+h1, p {
+  margin-left: 20px;
+}
+h2 {
+  margin-left: 20px
+}
+
 input#sms-input.hidden {
   display: none;
 }
@@ -34,15 +41,8 @@ div.title_header {
 	overflow: visible;
 	z-index: 9999;
 }
-<<<<<<< HEAD
-
 /*INDEX CSS*/
-#main-content {
-  margin: auto;
-  width: 60%;
-  text-align: center;
-  height: 42vw;
-}
+
 .welcome {
 
 }
@@ -68,6 +68,11 @@ div.title_header {
   float: right;
 }
 
+main {
+  width: 100%;
+  padding: 3% 0%;
+  height: 42vw;
+}
 
 /*FOOTER*/
 .icon-linkedin:before {
@@ -102,5 +107,3 @@ dd.palette {
 	width: 150px;
 	border: 1px;
 }
-=======
->>>>>>> 47fb15f25ea9b7c4790f50791780fba20209531b
