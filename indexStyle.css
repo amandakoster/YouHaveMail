@@ -1,12 +1,18 @@
+
+main{
+  width: 100%;
+  padding: 3% 0%;
+  height: auto;
+}
 #main-content {
   margin: auto;
   width: 60%;
-  text-align: center;
+  text-align: left;
   height: 20vw;
-  background-color:;
+  background-color;
 }
 #main-content h1 {
-  margin: 0% auto 3% auto;
+  margin: % auto 3% auto;
   font-size: 2vw;
 }
 .about-product {
@@ -14,7 +20,7 @@
   height: 87%;
 }
 .main-buttons {
-height: 15.2vw;
+height: 10.2vw;
 }
 #res-button-cont {
   height: 12vw;
@@ -28,23 +34,21 @@ height: 15.2vw;
   float: left;
   border: 1px solid #333366;
   background-color: #333366;
-  padding: 4vw 7vw;
-  width: 25vw;
-  height: 12vw;
+  width: 20vw;
+  height: 7vw;
   color: #FFFFFF !important;
   font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
   margin-top: 3vw;
-  margin-left: 14vw;
+  margin-left: 20vw;
   display: inherit;
 }
 #res-button:hover {
   cursor: pointer;
-  background-color: rgba(51, 51, 102, 0.9);
+  background-color: rgba(233, 25, 33, 0.9);
   transform: scale(.98,.98);
-  color: #EDEDED;
 }
 #mm-button-cont {
   height: 12vw;
@@ -55,20 +59,19 @@ height: 15.2vw;
   float: right;
   border: 1px solid #333366;
   background-color: #333366;
-  padding: 4vw 7vw;
-  width: 25vw;
-  height: 12vw;
+  width: 20vw;
+  height: 7vw;
   color: #FFFFFF !important;
   font-size: 2vw;
   font-family: "HelveticaNeueW02-75Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-radius: 3px;
   display: inline-block;
   margin-top: 3vw;
-  margin-right: 14vw;
+  margin-right: 20vw;
 }
 #mm-button:hover {
   cursor: pointer;
-  background-color: rgba(51, 51, 102, 0.9);
+  background-color: rgba(233, 25, 33, 0.9);
   transform: scale(.98,.98);
 }
 #res-submit-button {
@@ -123,4 +126,6 @@ height: 15.2vw;
   width: 22vw;
   height: 3vw;
   margin-top: 3vw;
+  font-size: 1.5vw;
+  text-indent: .5vw;
 }
