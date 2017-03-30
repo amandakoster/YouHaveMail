@@ -75,8 +75,8 @@ function initMap() {
     var newUserInfo = localStorage.newUserArray;
     var userArray = JSON.parse(newUserInfo);
     for(var i =0; i < userArray.length; i++){
-      var userAddress = userArray[i].address;
-      var userStringSplit = userArray[i].address.split(' ');
+      var userAddress = userArray[i].mailAddress;
+      var userStringSplit = userArray[i].mailAddress.split(' ');
       var userStringJoin = userStringSplit.join('+');
       var url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + userStringJoin + '&key=AIzaSyAb3gmSEsoKXrUZBsqoY2a0_mNc4EvJfck';
 
