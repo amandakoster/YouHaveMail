@@ -12,12 +12,12 @@ var form = document.getElementById('form').addEventListener('submit', function(e
 });
 var users = [];
 
-function NewUser(fullName,userName, mailAddress, emailAddress,cboxSms,cboxEmail) {
+function NewUser(fullName,userName, mailAddress, emailAddress,smsCbox,cboxEmail) {
   this.fullName = fullName;
   this.userName = userName;
   this.mailAddress = mailAddress;
   this.emailAddress = emailAddress;
-  this.cboxSms = cboxSms;
+  this.smsCbox = smsCbox;
   this.cboxEmail = cboxEmail;
   users.push(this);
 };
