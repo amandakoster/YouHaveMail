@@ -7,7 +7,7 @@ function messageSent() {
   var messageSent = document.getElementById('messageSent');
   var img = document.createElement("img");
   img.setAttribute('class', 'sent-gif');
-  img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";  
+  img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";
   messageSent.appendChild(img);
 }
 function markerSubmit() {
@@ -16,13 +16,13 @@ function markerSubmit() {
   document.getElementById('markerInput').value = '';
 }
 function initMap() {
-  var codeFellows = {lat: 47.6182, lng: -122.3518};
+  var codeFellows = {lat: 47.618478, lng: -122.352365};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
     center: codeFellows
   });
   var marker = new google.maps.Marker({
-    name:'C - Code Fellows',
+    name:'C - Bus Stop',
   	label: 'C',
     position: codeFellows,
     map: map
@@ -60,12 +60,13 @@ function initMap() {
     placeMarker(event.latLng);
   });
 
-  function placeMarker(location) {
+  function placeMarker(location,address) {
     var marker = new google.maps.Marker({
+      name: address,
       position: location,
       map: map
     });
-    placedMarkerArray.push(marker.position);
+    placedMarkerArray.push(marker.name);
   }
   function newRegisteredUser(){
     var newUserInfo = localStorage.newUserArray;
@@ -79,10 +80,13 @@ function initMap() {
         type: 'GET',
         url: url,
         dataType: 'json'
-      }).done(function(data){ 
+      }).done(function(data){
+        console.log(data);
           var newMarkLocation = data.results[0].geometry.location;
-          placeMarker(newMarkLocation);
-      });      
+          var newMarkerAddress = data.results[0].formatted_address;
+          console.log(newMarkerAddress);
+          placeMarker(newMarkLocation,newMarkerAddress);
+      });
     }
   }
   newRegisteredUser();
@@ -97,4 +101,3 @@ function createList() {
   }
   return list;
 }
-
