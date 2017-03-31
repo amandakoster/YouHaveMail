@@ -4,10 +4,11 @@
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<title>You Have Mail</title>
-	<link href="registration.style.css" rel="stylesheet">
+	<link href="RegistrationStyle.css" rel="stylesheet">
 	<script async defer src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript">
 	</script>
 	<link href="img/favicon-envelope.ico" rel="icon" type="img/ico">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/80a1bd682f/UntitledProject/style.css">
 	<script src="https://use.fontawesome.com/20877e6602.js">
 	</script>
 	<link rel="stylesheet" href="globalCSS.css">
@@ -18,22 +19,24 @@
 			<a id="logo-img" href="index.html"><i id="logo-inner" class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
 		</div>
 	</header>
-	<h1>You Have Mail: Registration</h1>
-	<h2>Welcome! Please enter your information in the form below.</h2>
-	<p>Please note, your personal information will not be shared with your mail courier.</p>
+	<h2>Welcome! To sign up, please enter your information in the form below.</h2>
+	<p>Note, your personal information will not be shared with your mail carrier.</p>
+	<div class="container">
 	<form id="form" name="form">
 		<fieldset>
-			<div>Name: <input id="fullName" type="text" required></div>
-			<div>User Name: <input id="userName" type="text" required></div>
-			<div>Mailing address: <input id="mailAddress" type="text"  required></div>
-			<div>Email address: <input id="emailAddress" type="text" required></div>
-			<div>Great! Now, choose how would like to be notified once your mail is delivered:</div>
+			<div>Name: <input id="fullName" class="input" type="text" required></div>
+			<div>User Name: <input id="userName" class="input" type="text" required></div>
+			<div>Mailing address: <input id="mailAddress" class="input" type="text"  required></div>
+			<div>Email address: <input id="emailAddress" class="input" type="text" required></div>
+			<div id="great">Great! Now, choose how would like to be notified once your mail is delivered:</div>
+</div>
+			<div class="checkbox">
+				<div><input id="sms-cbox" for="sms" type="checkbox">SMS/text notification <input id="sms-input" type="number" class="hidden"></div>
 
-			<div><input id="sms-cbox" for="sms" type="checkbox" >SMS /text notification <input id="sms-input" type="number" class="hidden"></div>
+			<div><input id="cboxEmail" for="mailAddress" type="checkbox">Email notification</div>
 
-			<div><input id="cboxEmail" for="mailAddress" type="checkbox" >Email notification</div>
-
-			<div><button id="submitButton" type="submit">Submit</button></div>
+			<div><button id="submit-button" class="input" type="submit">Submit</button></div>
+		</div>
 		</fieldset>
 	</form>
 	<footer id="footer">
@@ -54,7 +57,6 @@
 			</div>
 		</a>
 	</footer>
-	<script src="Registration.App.js">
-	</script>
+	<script type="text/javascript" src="RegistrationApp.js"></script>
 </body>
 </html>

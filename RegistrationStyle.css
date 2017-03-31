@@ -1,0 +1,76 @@
+/*REGISTRATION CSS*/
+
+h1, p {
+	margin-left: 20px;
+}
+
+h2 {
+	margin-left: 20px;
+}
+
+h3 {
+	padding-top: 5px;
+}
+
+input#sms-input.hidden {
+	display: none;
+}
+
+input#sms-input.visible {
+background-color: white;
+}
+
+fieldset {
+	border: none;
+	margin-left: 1vw;
+}
+
+#great {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+form {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.container {
+	width: 500px;
+	clear: both;
+}
+
+.container input {
+	width: 100%;
+	clear: both;
+}
+
+#submit-button {
+	background-color: #333366;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	margin: 10px;
+  margin-left: 40px;
+	cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit-button:hover {
+	background-color: #E71921;
+	color: white;
+}
+
+input[type=checkbox] {
+  transform: scale(1.25);
+  margin: 10px;
+  margin-left: 20px;
+  vertical-align: center;
+}
+
+
+footer{
+  margin-top: 20px;
+}
