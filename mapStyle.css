@@ -1,4 +1,3 @@
-/*MAP CSS*/
 
 .messageSent{
   border-radius:20px;
@@ -94,6 +93,7 @@ div.map{
   cursor: pointer;
   background-color: #E71921;
   transform: scale(.98,.98);
+  border: 1px solid #E71921;
 }
 h1 {
   display: block;

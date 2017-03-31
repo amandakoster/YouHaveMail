@@ -5,12 +5,10 @@ var resButton = document.getElementById('res-button');
 var mmButtonCont = document.getElementById('mm-button-cont');
 var mmButtonDiv = document.getElementById('mm-button-div');
 var mmButton = document.getElementById('mm-button');
-
 resButton.addEventListener('click', function(event){
   event.preventDefault();
   window.location.replace('registration.html');
 });
-
 mmButton.addEventListener('click', function() {
   mmButtonDiv.style.display = 'none';
   var form = document.createElement('form');

@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>You Have Mail</title>
-	<link rel="stylesheet" href="mapStyle.css">
-	<script src="https://use.fontawesome.com/20877e6602.js"></script>
-	<link href="img/favicon-envelope.ico" rel="icon" type="img/ico">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="globalCSS.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>You Have Mail</title>
+  <link rel="stylesheet" href="mapStyle.css">
+  <script src="https://use.fontawesome.com/20877e6602.js"></script>
+  <link href="img/favicon-envelope.ico" rel="icon" type="img/ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="globalStyle.css">
 </head>
-	<body>
-		<header id="header">
-			<div class="logo-div">
-				<a id="logo-img" href="index.html"><i id="logo-inner" class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
-			</div>
-			<a id="register-link" href="index.html">Log Out</a>
-		</header>
 
-		<main id="main">
-			<div class="gridNumber"><p>Grid Id # 12</p></div>
-			<div id="map" class="map"></div>
-			<div class="markerInputBox">
-				<button type="submit" id="markerSubmitButton" class="mm-button"> Mail Delivered</button>
-			</div>
-			<section class="listContainer">
-				<p class="messageSentText">A "mail delivered" notification has been sent to the following locations:</p>
-				<a href="map.html"><div class="messageSent" id="messageSent"></div></a>
-				<div class="ul" id="ul"></div>
-			</section>
-		</main>
+<body>
+  <header id="header">
+    <div class="logo-div">
+      <a id="logo-img" href="index.html"><i id="logo-inner" class="fa fa-envelope fa-3x" aria-hidden="true"></i><h2 id="logo-text">You Have Mail!</h2></a>
+    </div>
+    <a id="register-link" href="index.html">Log Out</a>
+  </header>
 
-		<footer id="footer">
-			<h3>Our Development Team</h3>
-			<a target="_blank" href="https://www.linkedin.com/in/james-salamonsen-12237b82/">
-				<div class="li-badges left-badge">
-					<img src="img/James LinkedIn Image.jpg" alt="Image of James' linked in badge">
-				</div>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/amandakoster/">
-				<div class="li-badges center-badge">
-					<img src="img/Amanda LinkedIn Image.jpg" alt="Image of Amanda's linked in badge">
-				</div>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/in/michael-miller-b1a5967a/">
-				<div class="li-badges right-badge">
-					<img src="img/Michael LinkedIn Image.jpg" alt="Image of Michael's linked in badge.">
-				</div>
-			</a>
-		</footer>
- 		<script src="map.js"></script>
-		<script async defer
-	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb3gmSEsoKXrUZBsqoY2a0_mNc4EvJfck&callback=initMap">
-	    </script>
+  <main id="main">
+    <div class="gridNumber">
+      <p>Grid Id # 12</p>
+    </div>
+    <div id="map" class="map"></div>
+    <div class="markerInputBox">
+      <button type="submit" id="markerSubmitButton" class="mm-button"> Mail Delivered</button>
+    </div>
+    <section class="listContainer">
+      <p class="messageSentText">A "mail delivered" notification has been sent to the following locations:</p>
+      <a href="map.html">
+        <div class="messageSent" id="messageSent"></div>
+      </a>
+      <div class="ul" id="ul"></div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <h3>Our Development Team</h3>
+    <a target="_blank" href="https://www.linkedin.com/in/james-salamonsen-12237b82/">
+      <div class="li-badges left-badge">
+        <img src="img/James LinkedIn Image.jpg" alt="Image of James' linked in badge">
+      </div>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/amandakoster/">
+      <div class="li-badges center-badge">
+        <img src="img/Amanda LinkedIn Image.jpg" alt="Image of Amanda's linked in badge">
+      </div>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/michael-miller-b1a5967a/">
+      <div class="li-badges right-badge">
+        <img src="img/Michael LinkedIn Image.jpg" alt="Image of Michael's linked in badge.">
+      </div>
+    </a>
+  </footer>
+  <script src="map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb3gmSEsoKXrUZBsqoY2a0_mNc4EvJfck&callback=initMap">
+  </script>
 </body>
+
 </html>
