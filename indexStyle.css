@@ -49,6 +49,7 @@ height: 10.2vw;
   cursor: pointer;
   background-color: rgba(233, 25, 33, 0.9);
   transform: scale(.98,.98);
+  border-color: rgba(233, 25, 33, 0.9);
 }
 #mm-button-cont {
   height: 12vw;
@@ -73,6 +74,7 @@ height: 10.2vw;
   cursor: pointer;
   background-color: rgba(233, 25, 33, 0.9);
   transform: scale(.98,.98);
+  border-color: rgba(233, 25, 33, 0.9);
 }
 #res-submit-button {
   border: 1px solid #333366;
