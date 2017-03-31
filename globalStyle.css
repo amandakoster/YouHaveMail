@@ -48,6 +48,8 @@ body {
   position: absolute;
   width: 25%;
 }
+button:focus {outline:0;
+}
 #logo-img {
 position: absolute;
 display: block;
