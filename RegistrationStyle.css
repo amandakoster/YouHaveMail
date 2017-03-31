@@ -1,112 +1,76 @@
 /*REGISTRATION CSS*/
+
 h1, p {
-  margin-left: 20px;
+	margin-left: 20px;
 }
+
 h2 {
-  margin-left: 20px
+	margin-left: 20px;
+}
+
+h3 {
+	padding-top: 5px;
 }
 
 input#sms-input.hidden {
-  display: none;
+	display: none;
 }
+
 input#sms-input.visible {
-background-color: : red;
+background-color: white;
 }
 
 fieldset {
 	border: none;
-  margin-left: 1vw;
+	margin-left: 1vw;
 }
 
-form{
-  margin-top:60px;
-  margin-bottom: 150px;
+#great {
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
-#submitButton {
-  background-color: #333366;
-  border: none;
-  color: white;
+form {
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
-li, span {
-	font-size: 14px;
-	display: block;
-	line-height: 1.5;
+.container {
+	width: 500px;
+	clear: both;
 }
 
-div.title_header {
-	position: fixed;
-	padding: 10px 10px 10px 40px;
+.container input {
+	width: 100%;
+	clear: both;
+}
+
+#submit-button {
 	background-color: #333366;
-	width: 1230px;
-	height: 63px;
-	overflow: visible;
-	z-index: 9999;
-}
-/*INDEX CSS*/
-
-.welcome {
-
-}
-.about-products{
-
-}
-.about-us {
-
-}
-.main-buttons {
-
-}
-#res-button-cont {
-  width: 15%;
-}
-#res-button {
-  float: left;
-}
-#mm-button-cont {
-
-}
-#mm-button {
-  float: right;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	margin: 10px;
+  margin-left: 40px;
+	cursor: pointer;
+  border-radius: 10px;
 }
 
-main {
-  width: 100%;
-  padding: 3% 0%;
-  height: 42vw;
+#submit-button:hover {
+	background-color: #E71921;
+	color: white;
 }
 
-.icon-linkedin:before {
-  content: "\eac9";
+input[type=checkbox] {
+  transform: scale(1.25);
+  margin: 10px;
+  margin-left: 20px;
+  vertical-align: center;
 }
 
 
-/*STYLEGUIDE STUFF*/
-
-dt {
-	font-size: 14px;
-	display: block;
-	line-height: 1.5;
-}
-
-dl {
-	text-align: left;
-	padding-left: 30px;
-}
-
-dd {
-	border-style: solid;
-	border: 1px;
-	margin: 10px 40px 10px;
-	text-align: center;
-	line-height: 1.5;
-	display: table-cell;
-	height: 5em;
-}
-
-dd.palette {
-	height: 50px;
-	width: 150px;
-	border: 1px;
+footer{
+  margin-top: 20px;
 }
