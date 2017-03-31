@@ -76,10 +76,8 @@ function initMap() {
         url: url,
         dataType: 'json'
       }).done(function(data){
-        console.log(data);
         var newMarkLocation = data.results[0].geometry.location;
         var newMarkerAddress = data.results[0].formatted_address;
-        console.log(newMarkerAddress);
         placeMarker(newMarkLocation,newMarkerAddress);
       });
     }
