@@ -43,4 +43,5 @@ var submitButton = document.getElementById('submit-button');
 function clearForm() {
   alert('Thanks for signing up!');
   document.getElementById('form').reset();
+  window.location.replace('index.html');
 };
