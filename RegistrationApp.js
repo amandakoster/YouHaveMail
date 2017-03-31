@@ -33,3 +33,15 @@ addEventListener('click', function() {
     smsInput.removeAttribute('class', 'hidden');
   }
 });
+
+var submitAlert = document.getElementById('submitButton');
+submitAlert.addEventListener('click', function() {
+  alert('Thanks for signing up!');
+});
+
+// //set a variable to refer to a specific ID
+// var submitAlert = document.getElementById('submitButton');
+// //initiate this function when the user clicks the ID
+// specialSection.onclick = function() {
+//   alert('Thanks for signing up!');
+// };
