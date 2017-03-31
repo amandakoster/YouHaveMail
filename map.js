@@ -22,36 +22,31 @@ function initMap() {
     center: codeFellows
   });
   var marker = new google.maps.Marker({
-    name:'C - Bus Stop',
-    label: 'C',
+    name:'Bus Stop',
     position: codeFellows,
     map: map
   });
   var bank = {lat: 47.6175, lng: -122.3520};
   var markerBank = new google.maps.Marker({
-    name:'E - Banner Bank',
-    label: 'E',
+    name:'Banner Bank',
     position: bank,
     map:map
   });
   var kiro = {lat: 47.6193, lng: -122.3504};
   var markerKiro = new google.maps.Marker({
-    name:'A - Kiro 7',
-    label: 'A',
+    name:'Kiro 7',
     position: kiro,
     map:map,
   });
   var pSC = {lat: 47.6178, lng: -122.3514};
   var markerPSC = new google.maps.Marker({
-    name:'D - Pacific Science Center',
-    label: 'D',
+    name:'Pacific Science Center',
     position: pSC,
     map:map,
   });
   var gas76 = {lat: 47.6192, lng: -122.3517};
   var markerGas76 = new google.maps.Marker({
-    name:'B - 76',
-    label: 'B',
+    name:'76',
     position: gas76,
     map:map,
   });
