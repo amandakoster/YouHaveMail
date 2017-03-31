@@ -34,9 +34,10 @@ addEventListener('click', function() {
   }
 });
 
-var submitAlert = document.getElementById('submitButton');
-submitAlert.addEventListener('click', function() {
+var submitButton = document.getElementById('submit-button');
+submitButton.addEventListener('click', function() {
   alert('Thanks for signing up!');
+  document.getElementById('form').reset();
 });
 
 // //set a variable to refer to a specific ID
