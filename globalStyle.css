@@ -34,7 +34,7 @@ body {
   color: #fff;
 }
 .fa {
-  left: 2%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -59,7 +59,7 @@ height: 100%;
 #logo-text {
   display: block;
   position: absolute;
-  left:23%;
+  left:27%;
   top: 50%;
   transform: translateY(-50%);
   padding: 0;
