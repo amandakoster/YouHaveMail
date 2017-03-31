@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
 body {
   margin: auto;
   padding: 0;
@@ -48,7 +47,6 @@ body {
   height: 100%;
   position: absolute;
   width: 25%;
-
 }
 #logo-img {
 position: absolute;
@@ -112,19 +110,15 @@ height: 100%;
   left: 75%;
   transform: translateX(-50%);
 }
-
 a:link {
 	color: #333366;
 }
-
 a:visited {
 	color: #333366;
 }
-
 a:hover {
 	color: #E71921;
 }
-
 a:active {
 	color: #333366
 }

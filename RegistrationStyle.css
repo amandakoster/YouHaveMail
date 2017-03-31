@@ -24,6 +24,9 @@ fieldset {
 	border: none;
 	margin-left: 1vw;
 }
+fieldset div {
+	margin: 2% 0%;
+}
 
 #great {
   padding-top: 20px;
