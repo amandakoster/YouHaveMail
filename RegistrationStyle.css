@@ -40,18 +40,20 @@ form {
 	clear: both;
 }
 
-#submitButton {
+#submit-button {
 	background-color: #333366;
 	border: none;
 	color: white;
 	width: 100px;
-	height: 50px;
+	height: 40px;
 	font-size: 16px;
 	margin: 10px;
+  margin-left: 40px;
 	cursor: pointer;
+  border-radius: 10px;
 }
 
-#submitButton:hover {
+#submit-button:hover {
 	background-color: #E71921;
 	color: white;
 }
