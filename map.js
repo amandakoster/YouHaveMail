@@ -5,9 +5,9 @@ document.getElementById('markerSubmitButton').addEventListener('click', createLi
 document.getElementById('markerSubmitButton').addEventListener('click', messageSent);
 function messageSent() {
   var messageSent = document.getElementById('messageSent');
-  var img = document.createElement("img");
+  var img = document.createElement('img');
   img.setAttribute('class', 'sent-gif');
-  img.src = "https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif";
+  img.src = 'https://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-sent.gif';
   messageSent.appendChild(img);
 }
 function markerSubmit() {
@@ -23,38 +23,38 @@ function initMap() {
   });
   var marker = new google.maps.Marker({
     name:'C - Bus Stop',
-  	label: 'C',
+    label: 'C',
     position: codeFellows,
     map: map
   });
   var bank = {lat: 47.6175, lng: -122.3520};
   var markerBank = new google.maps.Marker({
     name:'E - Banner Bank',
-   	label: 'E',
-   	position: bank,
-   	map:map
-    });
+    label: 'E',
+    position: bank,
+    map:map
+  });
   var kiro = {lat: 47.6193, lng: -122.3504};
   var markerKiro = new google.maps.Marker({
     name:'A - Kiro 7',
-   	label: 'A',
-   	position: kiro,
-   	map:map,
-    });
+    label: 'A',
+    position: kiro,
+    map:map,
+  });
   var pSC = {lat: 47.6178, lng: -122.3514};
   var markerPSC = new google.maps.Marker({
     name:'D - Pacific Science Center',
-   	label: 'D',
-   	position: pSC,
-   	map:map,
-    });
+    label: 'D',
+    position: pSC,
+    map:map,
+  });
   var gas76 = {lat: 47.6192, lng: -122.3517};
   var markerGas76 = new google.maps.Marker({
     name:'B - 76',
-   	label: 'B',
-   	position: gas76,
-   	map:map,
-    });
+    label: 'B',
+    position: gas76,
+    map:map,
+  });
   placedMarkerArray.push(marker.name, markerBank.name, markerKiro.name, markerGas76.name, markerPSC.name);
   google.maps.event.addListener(map, 'click', function(event) {
     placeMarker(event.latLng);
@@ -71,7 +71,7 @@ function initMap() {
   function newRegisteredUser(){
     var newUserInfo = localStorage.newUserArray;
     var userArray = JSON.parse(newUserInfo);
-    for(var i =0; i < userArray.length; i++){
+    for(var i = 0; i < userArray.length; i++){
       var userAddress = userArray[i].mailAddress;
       var userStringSplit = userArray[i].mailAddress.split(' ');
       var userStringJoin = userStringSplit.join('+');
@@ -82,10 +82,10 @@ function initMap() {
         dataType: 'json'
       }).done(function(data){
         console.log(data);
-          var newMarkLocation = data.results[0].geometry.location;
-          var newMarkerAddress = data.results[0].formatted_address;
-          console.log(newMarkerAddress);
-          placeMarker(newMarkLocation,newMarkerAddress);
+        var newMarkLocation = data.results[0].geometry.location;
+        var newMarkerAddress = data.results[0].formatted_address;
+        console.log(newMarkerAddress);
+        placeMarker(newMarkLocation,newMarkerAddress);
       });
     }
   }
