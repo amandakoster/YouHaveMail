@@ -10,4 +10,4 @@ CF 201 Project - Mike, James, and Amanda.
 ### In your web browser's url bar input the following: 
 - localhost:31337
 
-![alt text](YouHaveMail/Screenshot from 2017-11-02 00-43-08.png)
+![alt text](https://raw.githubusercontent.com/amandakoster/YouHaveMail/master/Screenshot%20from%202017-11-02%2000-43-08.png)
